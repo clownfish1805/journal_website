@@ -32,8 +32,10 @@ const Header = () => {
               Home
             </a>
             <a
-              href="/about"
-              className={location.pathname === "/about" ? "active-link" : ""}
+              href="/authorguide"
+              className={
+                location.pathname === "/authorguide" ? "active-link" : ""
+              }
             >
               Guidelines
             </a>
