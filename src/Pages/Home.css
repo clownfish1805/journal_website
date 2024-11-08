@@ -1,0 +1,26 @@
+.full-screen-bg {
+    width: 100%;
+    height: calc(100vh - 80px - 60px);
+    background-image: url("../Assets/bg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .full-screen-bg {
+        background-size: contain;
+        margin-top: 100px;
+        height: calc(100vh - 70px - 50px);
+        /* Adjusting for header/footer heights on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .full-screen-bg {
+        margin-top: 100px;
+         /* background-size: 200%;  */
+        height: calc(100vh - 60px - 50px);
+        /* Adjust further for very small screens */
+    }
+}

@@ -74,3 +74,66 @@
     margin-left: 5px;
     vertical-align: middle;
 }
+
+
+/* For smaller screens (tablet and below) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .nav-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .nav a {
+        font-size: medium;
+    }
+
+    .dropdown {
+        width: 100%;
+        /* Make the dropdown take full width */
+    }
+
+    .dropdown a {
+        font-size: small;
+        padding: 10px;
+    }
+
+    /* Adjust dropdown icon position for smaller screens */
+    .dropdown-icon {
+        margin-left: 10px;
+    }
+}
+
+/* For very small screens (mobile devices) */
+@media (max-width: 480px) {
+    .nav a {
+        font-size: small;
+        padding: 8px 0;
+    }
+
+    .dropdown {
+        width: 100%;
+        /* Full width on very small screens */
+    }
+
+    .dropdown a {
+        padding: 10px;
+    }
+
+    .dropdown-icon {
+        margin-left: 10px;
+    }
+}
