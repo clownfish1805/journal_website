@@ -1,7 +1,7 @@
 import React from "react";
 import "./Authorguide.css";
-import Header from "../Components/Header/Header";
-import Footer from "../Components/Footer/Footer";
+import Header from "../../Components/Header/Header";
+import Footer from "../../Components/Footer/Footer";
 
 const Authorguide = () => {
   return (

@@ -1,6 +1,7 @@
 .author-content{
-    padding: 20px 80px 20px 80px;
+    padding: 0px 80px 20px 80px;
     font-size: 1.3rem;
+    margin: 100px 100px 100px 100px;
 }
 .boxes-author {
     display: grid;

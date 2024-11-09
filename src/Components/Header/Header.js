@@ -40,9 +40,9 @@ const Header = () => {
               Guidelines
             </a>
             <a
-              href="/contactus"
+              href="/resources"
               className={
-                location.pathname === "/contactus" ? "active-link" : ""
+                location.pathname === "/resources" ? "active-link" : ""
               }
             >
               Resources
@@ -61,7 +61,8 @@ const Header = () => {
                 <div className="dropdown">
                   <a href="/announcement">Announcement</a>
                   <a href="/archive">Archive</a>
-                  <a href="/editorial-board">Editorial Board</a>
+                  <a href="/editorial">Editorial Board</a>
+                  <a href="/contactus">Contact us</a>
                 </div>
               )}
             </a>
