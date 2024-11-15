@@ -7,6 +7,7 @@ import Announcement from "./Pages/Announcement/Announcement";
 import Authorguide from "./Pages/Authorguide/Authorguide";
 import Editorial from "./Pages/Editorial/Editorial";
 import Resources from "./Pages/Resources/Resources";
+import VolumesList from "./Pages/Resources/Volumeslist";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/authorguide" element={<Authorguide />} />
         <Route path="/editorial" element={<Editorial />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/volume/:volumeId" element={<VolumesList />} />
       </Routes>
     </Router>
   );

@@ -48,7 +48,13 @@ const Header = () => {
               Resources
             </a>
             <a
-              className={location.pathname === "/journal" ? "active-link" : ""}
+              className={
+                location.pathname === "/contactus" ||
+                location.pathname === "/editorial" ||
+                location.pathname === "/announcement"
+                  ? "active-link"
+                  : ""
+              }
               onClick={toggleDropdown}
             >
               About
@@ -60,7 +66,6 @@ const Header = () => {
               {isDropdownOpen && (
                 <div className="dropdown">
                   <a href="/announcement">Announcement</a>
-                  <a href="/archive">Archive</a>
                   <a href="/editorial">Editorial Board</a>
                   <a href="/contactus">Contact us</a>
                 </div>

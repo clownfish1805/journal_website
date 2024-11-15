@@ -51,6 +51,7 @@
 .dropdown {
     position: absolute;
     display: flex;
+    z-index: 15; /* I have put this because the dropdown goes inside the background image. By increasing z index , the dropdown is focussed*/
     flex-direction: column;
     background-color: white;
     border: 1px solid #ddd;
@@ -63,7 +64,7 @@
     text-decoration: none;
     color: #898585;
     display: block;
-    /* white-space: nowrap; */
+    white-space: nowrap;
 }
 
 .dropdown a:hover {
