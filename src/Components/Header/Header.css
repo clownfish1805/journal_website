@@ -1,14 +1,20 @@
 .header {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     padding: 20px 40px;
     height: 80px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logo {
-    width: 50px;
+    width: 100px;
     height: auto;
+    margin-top: 10px;
     margin-right: 20px;
 }
 
@@ -21,6 +27,9 @@
 .nav {
     display: flex;
     gap: 100px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav a {
@@ -48,10 +57,25 @@
     left: 0;
 }
 
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
 .dropdown {
     position: absolute;
     display: flex;
-    z-index: 15; /* I have put this because the dropdown goes inside the background image. By increasing z index , the dropdown is focussed*/
+    z-index: 15;
+    /* I have put this because the dropdown goes inside the background image. By increasing z index , the dropdown is focussed*/
     flex-direction: column;
     background-color: white;
     border: 1px solid #ddd;
@@ -71,70 +95,43 @@
     background-color: #f0f0f0;
 }
 
-.dropdown-icon {
-    margin-left: 5px;
-    vertical-align: middle;
-}
 
-
-/* For smaller screens (tablet and below) */
 @media (max-width: 768px) {
-    .header {
+    .nav-container {
+        display: none;
+        /* Hide nav by default */
         flex-direction: column;
-        padding: 10px 20px;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .nav-container {
-        width: 100%;
+    .nav-container.active {
         display: flex;
-        justify-content: flex-start;
-        margin-top: 10px;
+        /* Show nav when active */
     }
 
     .nav {
-        display: flex;
         flex-direction: column;
         gap: 20px;
-        width: 100%;
+        padding: 20px;
     }
 
     .nav a {
         font-size: medium;
+        color: #333;
     }
 
-    .dropdown {
-        width: 100%;
-        /* Make the dropdown take full width */
-    }
-
-    .dropdown a {
-        font-size: small;
-        padding: 10px;
-    }
-
-    /* Adjust dropdown icon position for smaller screens */
-    .dropdown-icon {
-        margin-left: 10px;
+    .hamburger-menu {
+        display: flex;
     }
 }
 
-/* For very small screens (mobile devices) */
 @media (max-width: 480px) {
     .nav a {
         font-size: small;
-        padding: 8px 0;
-    }
-
-    .dropdown {
-        width: 100%;
-        /* Full width on very small screens */
-    }
-
-    .dropdown a {
-        padding: 10px;
-    }
-
-    .dropdown-icon {
-        margin-left: 10px;
     }
 }

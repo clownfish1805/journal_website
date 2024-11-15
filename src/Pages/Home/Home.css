@@ -1,45 +1,44 @@
 /* Base Styles for Full-screen Background */
 .full-screen-bg {
     width: 100%;
-    height: calc(100vh - 80px - 60px);
+    height: 100vh;
+    /* Full viewport height */
+    margin: 0;
+    padding: 0;
     background-image: url("../../Assets/bg.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    /* Important to position child text element inside */
 }
-
 
 .full-screen-bg .text-class {
     position: absolute;
     top: 50%;
     left: 10%;
-    font-size: 2rem;
+    font-size: 3rem;
     color: rgb(0, 0, 0);
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transform: translateY(-50%);
 }
 
-
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height:max-content;
+    min-height: 100vh;
+    /* Ensure full height */
     margin-top: 40px;
-    font-size:large;
+    font-size: large;
 }
-
 
 .row {
     display: flex;
     justify-content: center;
-    /* width: 100%; */
     margin-bottom: 20px;
-    gap: 100px;  /*To increase width between boxes*/
+    gap: 100px;
     font-size: large;
 }
 
@@ -47,117 +46,95 @@
     width: 250px;
     height: 250px;
     margin: 10px;
-    padding: 20px 20px 20px 20px;
-    border: 1px solid #ccc;
-    box-shadow: 5px 5px 5px 5px rgb(184, 183, 183);
+    padding: 20px;
+    text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: justify;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
-/* 
-.fifth-box {
-    width: 200px;
-} */
 
 h3 {
-    margin: 10px ;
+    margin: 10px;
 }
 
 p {
     font-size: 1.3rem;
 }
 
-
 .about-journal {
     width: 90%;
-    /* max-width: 800px; */ /* Optional: Set max-width for larger screens */
-    margin: 20px auto; /* Center the container with some margin on top and bottom */
+    margin: 20px auto;
     padding: 20px;
-  
 }
 
 .about-journal h3 {
     font-size: 1.8rem;
     color: #333;
     margin-bottom: 15px;
-    /* Add space between heading and content */
     text-align: left;
-    /* Align heading to the left */
     font-weight: bold;
 }
 
 .about-journal div {
     font-size: 1.3rem;
-
     line-height: 1.6;
- 
     text-align: justify;
-    /* Justify the content for even spacing */
 }
 
-
-/* Media Query for Tablets or Smaller Screens */
+/* Mobile and Tablet View Adjustments */
 @media (max-width: 768px) {
     .full-screen-bg {
-        background-size: contain;
-        /* Ensures the image shrinks to fit */
-        margin-top: 100px;
-        height: calc(100vh - 70px - 50px);
-        /* Adjust for header/footer heights */
+        background-size: cover;
+        height: 100vh;
     }
 
-    .full-screen-bg .text-class{
+    .full-screen-bg .text-class {
         font-size: 1.5rem;
         left: 5%;
-       top: 300px;
     }
 
     button {
         font-size: 16px;
         padding: 15px 30px;
     }
-         .row {
-             flex-direction: column;
-             align-items: center;
-         }
-    
-         .box {
-             width: 100%;
-             /* Make boxes take full width in small screens */
-             max-width: 300px;
-             /* Optional: You can set a max width to prevent it from becoming too wide */
-         }
-    
-         .fifth-box {
-             width: 100%;
-             /* Make the 5th box also take full width */
-         }
-}
 
-/* Media Query for Small Mobile Screens */
-@media (max-width: 480px) {
-    .full-screen-bg {
-        margin-top: 100px;
-        height: calc(100vh - 60px - 50px);
-        /* Adjust for smaller screens */
+    .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
     }
 
-    .full-screen-bg .text-class{
+    .box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .fifth-box {
+        width: 100%;
+    }
+}
+
+/* Small Mobile Screen Adjustments */
+@media (max-width: 480px) {
+    .full-screen-bg {
+        height: 100vh;
+    }
+
+    .full-screen-bg .text-class {
         font-size: 10px;
-        /* Reduce text size further */
         left: 5%;
-        /* Keep text inside image on the left */
         top: 50%;
-        
     }
 
     button {
         font-size: 12px;
         padding: 12px 25px;
         width: 100%;
-        /* Full width on small screens */
         margin: 5px 0;
     }
 }

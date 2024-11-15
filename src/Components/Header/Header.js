@@ -2,28 +2,27 @@ import React, { useState } from "react";
 import "./Header.css";
 import { useLocation } from "react-router-dom";
 import logo from "./../../Assets/logo.svg";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaChevronDown, FaChevronUp, FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
   const location = useLocation();
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
     <>
       <header className="header">
-        <img
-          src={logo}
-          alt="Journal Website Logo"
-          style={{
-            marginTop: "50px",
-          }}
-        />
-        <div className="nav-container">
+        <img src={logo} alt="Journal Website Logo" className="logo" />
+        <div className={`nav-container ${isNavOpen ? "active" : ""}`}>
           <nav className="nav">
             <a
               href="/"
@@ -72,6 +71,13 @@ const Header = () => {
               )}
             </a>
           </nav>
+        </div>
+        <div className="hamburger-menu" onClick={toggleNav}>
+          {isNavOpen ? (
+            <FaTimes className="hamburger-icon" />
+          ) : (
+            <FaBars className="hamburger-icon" />
+          )}
         </div>
       </header>
     </>

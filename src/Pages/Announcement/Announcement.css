@@ -1,3 +1,19 @@
 .container-announcement{
     margin: 100px 100px 100px 100px;
 }
+@media screen and (max-width: 768px) {
+  .container-announcement{
+    margin: 50px 50px 50px 50px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 480px) {
+    .author-content {
+        margin: 2px;
+        padding: 30px;
+        text-align: justify;
+    }
+
+    
+}

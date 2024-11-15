@@ -33,13 +33,38 @@
     margin-bottom: 10px;
 }
 
-/* Responsive Design for Smaller Screens */
 @media screen and (max-width: 768px) {
-    .author-content{
+    /* .author-content {
         text-align: justify;
+    } */
+
+    .author-content {
+            padding: 0px 40px 20px 40px;
+            /* Reduce side padding for tablets */
+            margin: 50px 20px 50px 20px;
+            /* Reduce margin for smaller screens */
     }
     .boxes-author {
         grid-template-columns: 1fr;
         text-align: justify;
     }
 }
+
+@media (max-width: 480px) {
+    .author-content {
+        margin: 2px;
+        padding: 30px;
+    }
+        .boxes-author {
+            grid-template-columns: 1fr;
+            /* Single column layout for mobile */
+            gap: 10px;
+            /* Reduce gap for mobile */
+        }
+                 .box-author {
+                     padding: 10px;
+                     /* Less padding for mobile */
+                 }
+}
+
+

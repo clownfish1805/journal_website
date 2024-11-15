@@ -2,21 +2,29 @@ import React from "react";
 import "./Home.css";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleContact = () => {
+    navigate("/contactus");
+  };
+
   return (
     <>
       <Header />
       <div className="full-screen-bg">
         <div className="text-class">
-          <span style={{ color: "blue" }}>International </span>Journal of
+          <span style={{ color: "blue" }}>International </span>
+          Journal of
           <br></br>
           Academic <span style={{ color: "blue" }}>Excellence</span>
           <div>
             <button
               style={{
                 backgroundColor: "blue",
-                borderRadius: "25%",
+                borderRadius: "25px",
                 padding: "20px 40px",
                 fontSize: "18px",
                 color: "white",
@@ -24,14 +32,16 @@ const Home = () => {
                 fontWeight: "bold",
                 textShadow: "inherit",
                 marginTop: "10px",
+                cursor: "pointer",
               }}
+              onClick={handleContact}
             >
               Contact
             </button>
             <button
               style={{
                 borderColor: "blue",
-                borderRadius: "25%",
+                borderRadius: "25px",
                 padding: "20px 20px",
                 fontSize: "18px",
                 color: "blue",
