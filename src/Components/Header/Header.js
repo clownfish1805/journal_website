@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
-import { useLocation } from "react-router-dom";
 import logo from "./../../Assets/logo.svg";
 import { FaChevronDown, FaChevronUp, FaBars, FaTimes } from "react-icons/fa";
 
@@ -24,36 +24,36 @@ const Header = () => {
         <img src={logo} alt="Journal Website Logo" className="logo" />
         <div className={`nav-container ${isNavOpen ? "active" : ""}`}>
           <nav className="nav">
-            <a
-              href="/"
+            <Link
+              to="/"
               className={location.pathname === "/" ? "active-link" : ""}
             >
               Home
-            </a>
-            <a
-              href="/authorguide"
+            </Link>
+            <Link
+              to="/authorguide"
               className={
                 location.pathname === "/authorguide" ? "active-link" : ""
               }
             >
               Guidelines
-            </a>
-            <a
-              href="/resources"
+            </Link>
+            <Link
+              to="/resources"
               className={
                 location.pathname === "/resources" ? "active-link" : ""
               }
             >
               Resources
-            </a>
-            <a
-              className={
+            </Link>
+            <div
+              className={`dropdown-wrapper ${
                 location.pathname === "/contactus" ||
                 location.pathname === "/editorial" ||
                 location.pathname === "/announcement"
                   ? "active-link"
                   : ""
-              }
+              }`}
               onClick={toggleDropdown}
             >
               About
@@ -64,12 +64,12 @@ const Header = () => {
               )}
               {isDropdownOpen && (
                 <div className="dropdown">
-                  <a href="/announcement">Announcement</a>
-                  <a href="/editorial">Editorial Board</a>
-                  <a href="/contactus">Contact us</a>
+                  <Link to="/announcement">Announcement</Link>
+                  <Link to="/editorial">Editorial Board</Link>
+                  <Link to="/contactus">Contact us</Link>
                 </div>
               )}
-            </a>
+            </div>
           </nav>
         </div>
         <div className="hamburger-menu" onClick={toggleNav}>
