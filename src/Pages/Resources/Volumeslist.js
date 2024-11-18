@@ -4,7 +4,7 @@ import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./Volumeslist.css";
 
-const API_URL = "http://localhost:8080/publications";
+const API_URL = "https://publication-backend-klr9.onrender.com/publications";
 
 const VolumesList = () => {
   const { volumeId } = useParams(); // Retrieve the volume ID from the URL

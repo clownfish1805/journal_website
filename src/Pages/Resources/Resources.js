@@ -4,7 +4,7 @@ import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = "http://localhost:8080/publications";
+const API_URL = "https://publication-backend-klr9.onrender.com/publications";
 
 const Resources = () => {
   const [volumes, setVolumes] = useState([]);
