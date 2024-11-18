@@ -46,7 +46,7 @@ const Header = () => {
             >
               Resources
             </Link>
-            <div
+            <Link
               className={`dropdown-wrapper ${
                 location.pathname === "/contactus" ||
                 location.pathname === "/editorial" ||
@@ -69,7 +69,7 @@ const Header = () => {
                   <Link to="/contactus">Contact us</Link>
                 </div>
               )}
-            </div>
+            </Link>
           </nav>
         </div>
         <div className="hamburger-menu" onClick={toggleNav}>
