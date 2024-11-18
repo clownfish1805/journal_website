@@ -4,7 +4,9 @@ import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./Volumeslist.css";
 
-const API_URL = "https://publication-backend-klr9.onrender.com/publications";
+// const API_URL = "https://publication-backend-klr9.onrender.com/publications";
+
+const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
 const VolumesList = () => {
   const { volumeId } = useParams(); // Retrieve the volume ID from the URL
@@ -15,7 +17,7 @@ const VolumesList = () => {
     const fetchPublications = async () => {
       try {
         // Pass the volumeId as a query parameter to filter the data
-        const response = await fetch(`${API_URL}?volume=${volumeId}`);
+        const response = await fetch(`${backendUrl}?volume=${volumeId}`);
         const data = await response.json();
         setPublications(data);
         setLoading(false);
