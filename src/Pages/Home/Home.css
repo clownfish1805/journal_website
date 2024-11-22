@@ -122,11 +122,11 @@ p {
 /* Small Mobile Screen Adjustments */
 @media (max-width: 480px) {
     .full-screen-bg {
-        height: 100vh;
+        height: 50vh;
     }
 
     .full-screen-bg .text-class {
-        font-size: 10px;
+        font-size: 30px;
         left: 5%;
         top: 50%;
     }
@@ -134,7 +134,7 @@ p {
     button {
         font-size: 12px;
         padding: 12px 25px;
-        width: 100%;
+        width: 50%;
         margin: 5px 0;
     }
 }

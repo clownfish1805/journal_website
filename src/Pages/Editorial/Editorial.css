@@ -10,6 +10,7 @@
     align-items: center;
     margin-top: 40px;
     font-size: large;
+    
 }
 
 .row-editorial {
@@ -22,12 +23,12 @@
 }
 
 .box-editorial {
-    width: 300px;
+    width: 200px;
     height: 100px;
     margin: 10px;
     padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 5px 5px 5px 5px rgb(184, 183, 183);
+    /* border: 1px solid #ccc; */
+    box-shadow: 2px 2px 2px 2px rgb(221, 221, 221);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,6 +39,7 @@
 .fifth-box-edit {
     width: 200px;
     height: 100px;
+    box-shadow: 2px 2px 2px 2px rgb(221, 221, 221);
 }
 
 /* Responsive Styles */
@@ -82,7 +84,7 @@
     }
 
     .box-editorial {
-        width: 100%;
+        width: 50%;
         height: auto;
         margin-bottom: 20px;
         font-size: medium;
@@ -110,14 +112,14 @@
     }
 
     .box-editorial {
-        width: 100%;
+        width: 50%;
         height: auto;
         margin-bottom: 15px;
         font-size: small;
     }
 
     .fifth-box-edit {
-        width: 100%;
+        width: 50%;
         height: auto;
     }
 

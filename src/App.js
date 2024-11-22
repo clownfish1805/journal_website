@@ -11,17 +11,15 @@ import VolumesList from "./Pages/Resources/Volumeslist";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contactus" element={<Contactus />} />
-        <Route path="/announcement" element={<Announcement />} />
-        <Route path="/authorguide" element={<Authorguide />} />
-        <Route path="/editorial" element={<Editorial />} />
-        <Route path="/resources" element={<Resources />} />
-        <Route path="/volume/:volumeId" element={<VolumesList />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/contactus" element={<Contactus />} />
+      <Route path="/announcement" element={<Announcement />} />
+      <Route path="/authorguide" element={<Authorguide />} />
+      <Route path="/editorial" element={<Editorial />} />
+      <Route path="/resources" element={<Resources />} />
+      <Route path="/volume/:year" element={<VolumesList />} />
+    </Routes>
   );
 }
 

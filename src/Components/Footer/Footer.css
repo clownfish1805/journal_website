@@ -3,50 +3,98 @@
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
-    /* gap: 10px; */
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    padding: 20px;
+    gap: 20px;
+    /* Ensure consistent spacing between sections */
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
 }
-
 
 .footer-image {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* gap: 10px; */
+    flex: 0 1 auto;
+    /* Ensure flexible width for consistent layout */
+    margin: 0;
+    /* Remove extra margins */
 }
 
 .footer-image img {
     width: 130px;
     height: auto;
     object-fit: contain;
+    margin: 0;
+    /* Remove default margins around images */
 }
-
 
 .footer-info,
 .footer-address {
-    font-size: 16px;
+    font-size: 14px;
+    /* Use a consistent font size */
     text-align: center;
+    margin: 0;
+    padding: 0 10px;
+    /* Add padding for spacing inside elements */
+    flex: 1;
+    /* Ensure equal space sharing */
 }
 
+/* Responsive Styling */
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
+        /* Switch to vertical layout */
+        align-items: center;
+        /* Center align content */
         text-align: center;
+        gap: 15px;
+        /* Add space between sections */
     }
 
     .footer-image {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        /* Ensure logos stay in one row */
+        gap: 10px;
+        /* Add some spacing between logos */
     }
 
-    /* .footer-image img {
-        margin-bottom: 10px;
-    } */
+    .footer-image img {
+        width: 100px;
+        /* Adjust image size */
+    }
 
-    .footer-info p,
-    .footer-address p {
+    .footer-info,
+    .footer-address {
         font-size: 12px;
+        /* Reduce font size */
     }
+}
+
+@media (max-width: 420px) {
+    .footer {
+        padding: 0px;
+      
+    }
+
+    .footer-image {
+            display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+    }
+
+    .footer-image img {
+        width: 80px;
+        height: 90px;
+        align-items: center;
+        /* Scale down images further */
+    }
+        .footer-info p,
+        .footer-address p {
+            font-size: 13px;
+        }
 }

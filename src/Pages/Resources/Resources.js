@@ -4,38 +4,33 @@ import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import { useNavigate } from "react-router-dom";
 
-// const API_URL = "https://publication-backend-klr9.onrender.com/publications";
-
+// Set your backend URL
 const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
 const Resources = () => {
-  const [volumes, setVolumes] = useState([]);
+  const [years, setYears] = useState([]); // Holds years
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchVolumes = async () => {
+    const fetchYears = async () => {
       try {
-        const response = await fetch(backendUrl);
+        const response = await fetch(`${backendUrl}/years`); // API to fetch years
         const data = await response.json();
-        const groupedVolumes = data.reduce((acc, item) => {
-          const { volume } = item;
-          if (!acc[volume]) acc[volume] = [];
-          acc[volume].push(item);
-          return acc;
-        }, {});
-        setVolumes(groupedVolumes);
+        console.log("Fetched data:", data);
+        setYears(data); // Set the years in state
         setLoading(false);
       } catch (error) {
-        console.error("Error fetching volumes:", error);
+        console.error("Error fetching years:", error);
         setLoading(false);
       }
     };
-    fetchVolumes();
+    fetchYears();
   }, []);
 
-  const handleVolumeClick = (volume) => {
-    navigate(`/volume/${volume}`);
+  // Handle year click
+  const handleYearClick = (year) => {
+    navigate(`/volumes/${year}`); // Navigate to volumes page for that year
   };
 
   return (
@@ -43,26 +38,29 @@ const Resources = () => {
       <Header />
       <div className="full-screen-bg">
         <div className="text-class" style={{ fontSize: "3rem" }}>
-          Volumes
+          Available Years
         </div>
       </div>
-      <div className="volumes-container">
+      <div className="years-container">
         {loading ? (
-          <p>Loading volumes...</p>
+          <p>Loading years...</p>
+        ) : years.length > 0 ? (
+          <div className="years-grid">
+            {years.map((year) => (
+              <div
+                key={year}
+                className="year-box"
+                onClick={() => handleYearClick(year)}
+              >
+                <h3>{year}</h3>
+                <p>Click to view volumes</p>
+              </div>
+            ))}
+          </div>
         ) : (
-          Object.keys(volumes).map((volume) => (
-            <div
-              key={volume}
-              className="volume-box"
-              onClick={() => handleVolumeClick(volume)}
-            >
-              <h3>Volume {volume}</h3>
-              <p>{volumes[volume].length} Publications</p>
-            </div>
-          ))
+          <p>No years available.</p>
         )}
       </div>
-
       <Footer />
     </>
   );

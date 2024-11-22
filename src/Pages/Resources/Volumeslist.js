@@ -4,20 +4,20 @@ import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./Volumeslist.css";
 
-// const API_URL = "https://publication-backend-klr9.onrender.com/publications";
-
 const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
-const VolumesList = () => {
-  const { volumeId } = useParams(); // Retrieve the volume ID from the URL
+const Volumeslist = () => {
+  const { year, volumeId } = useParams(); // Retrieve both the year and volumeId from the URL
   const [publications, setPublications] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchPublications = async () => {
       try {
-        // Pass the volumeId as a query parameter to filter the data
-        const response = await fetch(`${backendUrl}?volume=${volumeId}`);
+        // Fetch publications for the specific year and volume
+        const response = await fetch(
+          `${backendUrl}/publications/${year}/${volumeId}`
+        );
         const data = await response.json();
         setPublications(data);
         setLoading(false);
@@ -27,7 +27,7 @@ const VolumesList = () => {
       }
     };
     fetchPublications();
-  }, [volumeId]);
+  }, [year, volumeId]);
 
   return (
     <>
@@ -37,7 +37,7 @@ const VolumesList = () => {
           className="text-class"
           style={{ fontSize: "2rem", marginBottom: "20px" }}
         >
-          Publications in Volume {volumeId}
+          Publications in Volume {volumeId} of Year {year}
         </div>
       </div>
       <div className="publications-container">
@@ -63,10 +63,9 @@ const VolumesList = () => {
           <p>No publications found for this volume.</p>
         )}
       </div>
-
       <Footer />
     </>
   );
 };
 
-export default VolumesList;
+export default Volumeslist;

@@ -71,10 +71,14 @@
     border-radius: 2px;
 }
 
+
+
 .dropdown {
     position: absolute;
     display: flex;
     z-index: 15;
+    top: 100%;
+    left: 0;
     /* I have put this because the dropdown goes inside the background image. By increasing z index , the dropdown is focussed*/
     flex-direction: column;
     background-color: white;
@@ -90,6 +94,15 @@
     display: block;
     white-space: nowrap;
 }
+
+.nav a.dropdown-wrapper {
+    display: inline-flex;
+    align-items: center;
+    /* Vertically center the text and icon */
+    gap: 8px;
+position: relative;
+}
+
 
 .dropdown a:hover {
     background-color: #f0f0f0;
