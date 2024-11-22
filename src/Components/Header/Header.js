@@ -39,10 +39,8 @@ const Header = () => {
               Guidelines
             </Link>
             <Link
-              to="/resources"
-              className={
-                location.pathname === "/resources" ? "active-link" : ""
-              }
+              to="/years"
+              className={location.pathname === "/years" ? "active-link" : ""}
             >
               Resources
             </Link>
