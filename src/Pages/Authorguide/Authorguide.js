@@ -28,7 +28,8 @@ const Authorguide = () => {
           <p>
             Submit your manuscript as an MS Word file via email. The
             International Journal of English for Academic Excellence (IJEAE)
-            Email:{" "}
+            <br></br>
+            <span style={{ fontWeight: "bold" }}>Email: </span>
             <a href="mailto:attraitdovinfedrick333@gmail.com">
               attraitdovinfedrick333@gmail.com
             </a>
@@ -210,106 +211,6 @@ const Authorguide = () => {
               </ul>
             </div>
           </div>
-        </div>
-
-        <div>
-          <h2>Plagiarism Policy</h2>
-          <p>
-            In accordance with the University Grants Commission (UGC)
-            Regulations on Minimum Qualifications for Appointment of Teachers
-            and Other Academic Staff in Universities and Colleges and Measures
-            for the Maintenance of Standards in Higher Education, 2018, The
-            International Journal of English for Academic Excellence (IJEAE)
-            adheres to strict plagiarism guidelines to ensure the integrity of
-            academic publications. Our plagiarism policy follows the guidelines
-            of the UGC’s Promotion of Academic Integrity and Prevention of
-            Plagiarism in Higher Educational Institutions Regulations, 2018.
-          </p>
-
-          <h3>Key Features of the IJEAE Plagiarism Policy:</h3>
-          <h4>Definition of Plagiarism</h4>
-          <p>
-            Plagiarism is defined as using another person's work, ideas, or
-            expressions without appropriate credit or acknowledgement, and
-            presenting it as one’s own. This includes all forms of academic
-            publications, such as research articles, books, theses, and
-            dissertations.
-          </p>
-
-          <h4>Similarity Index</h4>
-          <p>
-            All submitted manuscripts should be checked for similarity using
-            reputable plagiarism detection software. The similarity index should
-            be included in the manuscript and adhere to the limits specified
-            below.
-          </p>
-
-          <h4>Acceptable Level of Similarity</h4>
-          <ul>
-            <li>
-              For research articles, the acceptable similarity index is up to
-              10%.
-            </li>
-            <li>
-              For review articles and other publication types, a similarity
-              index of up to 15% is permissible.
-            </li>
-          </ul>
-
-          <p>
-            It is recommended to review the complete UGC Plagiarism Policy for
-            any updates.
-          </p>
-
-          <h4>Consequences of Plagiarism</h4>
-          <p>
-            If plagiarism is detected, the manuscript will be rejected, and
-            authors will be notified of the decision. In cases of confirmed
-            plagiarism, authors may be prohibited from submitting future
-            manuscripts to IJEAE.
-          </p>
-
-          <h4>Ethical Considerations</h4>
-          <p>
-            IJEAE upholds the ethical standards outlined by the UGC to prevent
-            academic misconduct. All cases of academic dishonesty, including
-            plagiarism, will be addressed according to these standards to ensure
-            fair and ethical publishing practices.
-          </p>
-
-          <h4>Self-Plagiarism</h4>
-          <p>
-            Authors should submit only original manuscripts. Submissions
-            previously published in full or in part are not allowed, and
-            manuscripts must not be under review by another journal.
-          </p>
-        </div>
-
-        <div>
-          <h2>Article Processing Charges</h2>
-          <p>
-            The International Journal of English for Academic Excellence (IJEAE)
-            is committed to making high-quality research accessible to a broad
-            audience through open access. To support the costs of publishing,
-            the following fees apply:
-          </p>
-          <ul>
-            <li>
-              Article Submission Fee: ₹0.00 (INR) – There is no fee for
-              submitting an article to IJEAE.
-            </li>
-            <li>
-              Article Processing Fee (APC): ₹1500 (INR) for Indian authors and
-              30$ for foreign authors. This fee covers publication costs and
-              ensures that your article remains freely available online.
-            </li>
-          </ul>
-        </div>
-
-        <div style={{ fontWeight: "bold" }}>
-          Important Note: IJEAE will never request APC payments to personal
-          accounts. All APC payments should only be made to the Academic
-          Development Forum (ADF) (Publisher) account.
         </div>
       </div>
       <Footer />
