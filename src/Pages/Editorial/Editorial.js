@@ -16,12 +16,13 @@ const Editorial = () => {
 
       <div className="editorial-content">
         <p>
-          The International Journal of Academic Excellence (IJAE) is supported
-          by an esteemed Editorial Board dedicated to maintaining the journal’s
-          high standards and academic integrity. The Editorial Team, along with
-          the National and International Editorial Advisory Boards, brings
-          together a wealth of knowledge and expertise across various
-          disciplines, fostering a rigorous and comprehensive review process.
+          The International Journal of English for Academic Excellence (IJEAE)
+          is supported by an esteemed Editorial Board dedicated to maintaining
+          the journal’s high standards and academic integrity. The Editorial
+          Team, along with the National and International Editorial Advisory
+          Boards, brings together a wealth of knowledge and expertise across
+          various disciplines, fostering a rigorous and comprehensive review
+          process.
         </p>
         <h2>
           <span style={{ color: "blue" }}>Editorial </span>Team
@@ -41,7 +42,7 @@ const Editorial = () => {
         <p>
           Our National Editorial Advisory Board comprises distinguished
           academics from premier institutions across India. They contribute
-          insights and uphold the quality of scholarship within IJAE.
+          insights and uphold the quality of scholarship within IJEAE.
         </p>
 
         <div class="container-editorial">
@@ -73,11 +74,11 @@ const Editorial = () => {
           Advisory <span style={{ color: "blue" }}>Board</span>
         </h2>
         <p>
-          IJAE is committed to a global perspective on research and scholarship.
-          Our International Editorial Advisory Board includes respected scholars
-          from around the world who bring diverse expertise to the journal,
-          ensuring the relevance and impact of our published work across
-          borders.
+          IJEAE is committed to a global perspective on research and
+          scholarship. Our International Editorial Advisory Board includes
+          respected scholars from around the world who bring diverse expertise
+          to the journal, ensuring the relevance and impact of our published
+          work across borders.
         </p>
       </div>
 

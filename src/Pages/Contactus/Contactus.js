@@ -16,15 +16,13 @@ const Contactus = () => {
       <div className="container-contact">
         <p style={{ fontWeight: "bold" }}>THE PUBLISHER</p>
         <p>
-          <p>Academic Development Forum (ADF)</p>
-          Address:
-          <br></br>Email id:
+          Academic Development Forum (ADF) <br></br>Email id :
+          academicdevelopmentforum24@gmail.com
         </p>
         <p style={{ fontWeight: "bold" }}>EDITOR-IN-CHIEF</p>
         <p>
-          <p>International Journal of Academic Excellence</p>
-          Address:
-          <br></br>Email id:
+          International Journal of English for Academic Excellence<br></br>Email
+          id : editor.ijeae@gmail.com
         </p>
       </div>
       <Footer />

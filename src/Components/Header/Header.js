@@ -7,11 +7,19 @@ import { FaChevronDown, FaChevronUp, FaBars, FaTimes } from "react-icons/fa";
 const Header = () => {
   const location = useLocation();
 
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isGuidelinesDropdownOpen, setIsGuidelinesDropdownOpen] =
+    useState(false);
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+  const toggleGuidelinesDropdown = () => {
+    setIsGuidelinesDropdownOpen(!isGuidelinesDropdownOpen);
+    setIsAboutDropdownOpen(false);
+  };
+
+  const toggleAboutDropdown = () => {
+    setIsAboutDropdownOpen(!isAboutDropdownOpen);
+    setIsGuidelinesDropdownOpen(false);
   };
 
   const toggleNav = () => {
@@ -32,11 +40,27 @@ const Header = () => {
             </Link>
             <Link
               to="/authorguide"
-              className={
-                location.pathname === "/authorguide" ? "active-link" : ""
-              }
+              className={`dropdown-wrapper ${
+                location.pathname === "/plagarism" ||
+                location.pathname === "/journalmetrics" ||
+                location.pathname === "/authorguide"
+                  ? "active-link"
+                  : ""
+              }`}
+              onClick={toggleGuidelinesDropdown}
             >
               Guidelines
+              {isGuidelinesDropdownOpen ? (
+                <FaChevronUp className="dropdown-icon" />
+              ) : (
+                <FaChevronDown className="dropdown-icon" />
+              )}
+              {isGuidelinesDropdownOpen && (
+                <div className="dropdown">
+                  <Link to="/plagarism">Plagarism policy</Link>
+                  <Link to="/journalmetrics">Journal metrics</Link>
+                </div>
+              )}
             </Link>
             <Link
               to="/years"
@@ -52,15 +76,15 @@ const Header = () => {
                   ? "active-link"
                   : ""
               }`}
-              onClick={toggleDropdown}
+              onClick={toggleAboutDropdown}
             >
               About
-              {isDropdownOpen ? (
+              {isAboutDropdownOpen ? (
                 <FaChevronUp className="dropdown-icon" />
               ) : (
                 <FaChevronDown className="dropdown-icon" />
               )}
-              {isDropdownOpen && (
+              {isAboutDropdownOpen && (
                 <div className="dropdown">
                   <Link to="/announcement">Announcement</Link>
                   <Link to="/editorial">Editorial Board</Link>

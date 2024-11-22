@@ -17,7 +17,7 @@ const Home = () => {
       <div className="full-screen-bg">
         <div className="text-class">
           <span style={{ color: "blue" }}>International </span>
-          Journal of
+          Journal of English for
           <br></br>
           Academic <span style={{ color: "blue" }}>Excellence</span>
           <div>
@@ -38,7 +38,7 @@ const Home = () => {
             >
               Contact
             </button>
-            <button
+            {/* <button
               style={{
                 borderColor: "blue",
                 borderRadius: "25px",
@@ -52,7 +52,7 @@ const Home = () => {
               }}
             >
               Learn more
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
@@ -112,14 +112,15 @@ const Home = () => {
       <div className="about-journal">
         <h3>About the Journal</h3>
         <div className="journal-info">
-          The International Journal of Academic Excellence (IJAE) is a monthly
-          peer-reviewed, open-access journal published by the Academic
-          Development Forum (ADF), India. Launched in 2024, IJAE serves as a
-          premier platform for interdisciplinary scholarship, inviting
-          contributions from researchers and practitioners across a variety of
-          academic fields. With a focus on high-quality research in social
-          sciences, humanities and educational sciences, the journal seeks to
-          foster academic discourse and promote innovation in these areas.
+          The International Journal of English for Academic Excellence (IJEAE)
+          is a monthly peer-reviewed, open-access journal published by the
+          Academic Development Forum (ADF), India. Launched in 2024, IJEAE
+          serves as a premier platform for interdisciplinary scholarship,
+          inviting contributions from researchers and practitioners across a
+          variety of academic fields. With a focus on high-quality research in
+          social sciences, humanities and educational sciences, the journal
+          seeks to foster academic discourse and promote innovation in these
+          areas.
         </div>
       </div>
       <Footer />

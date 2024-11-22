@@ -9,6 +9,8 @@ import Editorial from "./Pages/Editorial/Editorial";
 import YearsPage from "./Pages/Resources/YearsPage";
 import VolumesPage from "./Pages/Resources/VolumesPage";
 import PublicationsPage from "./Pages/Resources/PublicationsPage";
+import Plagarismpolicy from "./Pages/Authorguide/Plagarismpolicy";
+import Journalmetrics from "./Pages/Authorguide/Journalmetrics";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Route path="/contactus" element={<Contactus />} />
       <Route path="/announcement" element={<Announcement />} />
       <Route path="/authorguide" element={<Authorguide />} />
+      <Route path="/plagarism" element={<Plagarismpolicy />} />
+      <Route path="/journalmetrics" element={<Journalmetrics />} />
       <Route path="/editorial" element={<Editorial />} />
       <Route path="/years" element={<YearsPage />} />
       <Route path="/volumes/:year" element={<VolumesPage />} />
