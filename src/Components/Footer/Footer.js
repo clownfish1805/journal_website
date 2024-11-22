@@ -13,7 +13,8 @@ const Footer = () => {
         </div>
         <div className="footer-info">&copy;Copyright @ IJAE2022</div>
         <div className="footer-address" style={{ marginRight: "10px" }}>
-          Email : editor.ijeae@gmail.com
+          Email :{" "}
+          <a href="mailto:editor.ijeae@gmail.com">editor.ijeae@gmail.com</a>
         </div>
       </div>
     </>

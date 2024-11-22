@@ -1,0 +1,19 @@
+.publication-box {
+    padding: 30px 30px 30px 30px;
+}
+
+@media screen and
+(max-width: 768px) {
+    .publication-box p{
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .publication-box{
+        padding: 20px 10px 10px 10px;
+    }
+    .publication-box p {
+        font-size: 20px;
+    }
+}

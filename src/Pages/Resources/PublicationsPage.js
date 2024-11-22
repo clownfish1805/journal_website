@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
+import "./PublicationsPage.css";
 
 const PublicationsPage = () => {
-  const { year, volume } = useParams(); // Get the year and volume from URL params
+  const { year, volume } = useParams();
   const [publications, setPublications] = useState([]);
 
-  // Fetch publications for the selected year and volume
   useEffect(() => {
     const fetchPublications = async () => {
       try {
@@ -15,14 +15,14 @@ const PublicationsPage = () => {
           `https://publication-backend-klr9.onrender.com/publications?year=${year}&volume=${volume}`
         );
         const data = await response.json();
-        setPublications(data); // Set the publications data
+        setPublications(data);
       } catch (error) {
         console.error("Error fetching publications:", error);
       }
     };
 
     fetchPublications();
-  }, [year, volume]); // Re-run the effect when the year or volume changes
+  }, [year, volume]);
 
   return (
     <>
@@ -38,18 +38,17 @@ const PublicationsPage = () => {
         {publications.length > 0 ? (
           publications.map((publication, index) => (
             <div key={publication.id} className="publication-box">
-              <h3>
+              <p>
                 {index + 1}. {publication.title}
-              </h3>
-              <h2>
                 <a
                   href={publication.link}
                   target="_blank"
                   rel="noopener noreferrer"
+                  style={{ marginLeft: "10px" }}
                 >
                   Get PDF
                 </a>
-              </h2>
+              </p>
             </div>
           ))
         ) : (
