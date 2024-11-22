@@ -8,7 +8,7 @@ const Announcement = () => {
     <>
       <Header />
       <div className="full-screen-bg">
-        <div className="text-class" style={{ fontSize: "3rem" }}>
+        <div className="text-class" style={{ fontSize: "2rem" }}>
           Announcement
           <span style={{ color: "blue" }}> Board</span>
         </div>
