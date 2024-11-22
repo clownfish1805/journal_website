@@ -15,36 +15,96 @@ const Announcement = () => {
       </div>
 
       <div className="container-announcement">
-        <div>
+        <section className="announcement-section">
+          <h2>Reduced Article Processing Fee</h2>
           <p>
-            The International Journal of Academic Excellence (IJAE) publishes
-            issues online at the end of every month. Authors are encouraged to
-            submit their manuscripts by the 15th of each month for consideration
-            in that month’s issue. Manuscripts submitted after the 15th may be
-            considered for the following month's issue, though timely
-            publication is not guaranteed.
+            To celebrate the launch of the International Journal of English for
+            Academic Excellence (IJEAE) and encourage researchers to publish
+            their work, the Article Processing Fee (APC) has been reduced to
+            ₹100 (from the standard ₹1500).
           </p>
-        </div>
-        <div>
-          <p style={{ fontWeight: "bold" }}>
-            If you have any further questions, please contact the
-            Editor-in-Chief:
-            <p>Mr. Attrait Dovin Fedrick S</p>
-            <p>
-              Email :
-              <a
-                href="mailto:attraitdovinfedrick333@gmail.com"
-                style={{ marginLeft: "5px" }}
-              >
-                attraitdovinfedrick333@gmail.com
-              </a>
-            </p>
+          <ul className="announcement-list">
+            <li>
+              <strong>Purpose:</strong> This introductory offer aims to foster
+              academic contributions and provide an accessible platform for
+              scholars to share their research.
+            </li>
+          </ul>
+        </section>
+
+        <section className="announcement-section">
+          <h2>Call for Reviewers</h2>
+          <p>
+            The International Journal of English for Academic Excellence (IJEAE)
+            invites scholars, researchers, and academics to join our team as
+            reviewers. This voluntary role offers an opportunity to contribute
+            expertise to the academic community and help maintain the journal's
+            high standards in the fields of English literature and language.
+          </p>
+          <h3>Requirements:</h3>
+          <ul className="announcement-list">
+            <li>
+              Expertise in English literature, language studies, or related
+              disciplines.
+            </li>
+            <li>
+              Prior experience in academic publishing or peer reviewing
+              (preferred but not mandatory).
+            </li>
+            <li>
+              Commitment to providing detailed, timely, and constructive
+              feedback.
+            </li>
+          </ul>
+          <p>
+            If you are interested in becoming a reviewer, kindly complete the
+            reviewer application form linked below and attach your most recent
+            CV. The Editorial Board will assess your application and notify you
+            of the outcome.
+          </p>
+          <p>
+            <strong>Application Link:</strong>{" "}
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScq6vV_arpiy-sIs9-4A3i2_qHc6KF8OJGzrboU3owtHxWNaA/viewform?usp=sf_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Reviewer Application Form
+            </a>
+          </p>
+        </section>
+        {/* 
+        <section className="announcement-section">
+          <h2>Contact Information</h2>
+          <p>
+            <strong>Editor-in-Chief:</strong> Mr. Attrait Dovin Fedrick S
+          </p>
+          <p>
+            <strong>Email:</strong>{" "}
+            <a href="mailto:editor.ijeae@gmail.com">editor.ijeae@gmail.com</a>
           </p>
           <p>
             Thank you for your cooperation, and stay tuned for the latest
             academic contributions each month!
           </p>
-        </div>
+        </section> */}
+
+        <footer className="announcement-footer">
+          <p>
+            If you have any questions, please contact<br></br>
+            <span style={{ fontWeight: "Bold" }}> Editor - in - chief</span>:
+            Mr. Attrait Dovin Fredrick
+            <br></br>
+            <span style={{ fontWeight: "bold" }}>Email: </span>
+            <a href="mailto:attraitdovinfedrick333@gmail.com">
+              attraitdovinfedrick333@gmail.com
+            </a>
+            <p>
+              Thank you for your cooperation, and stay tuned for the latest
+              academic contributions each month!
+            </p>
+          </p>
+        </footer>
       </div>
       <Footer />
     </>

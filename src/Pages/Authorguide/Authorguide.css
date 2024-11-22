@@ -34,15 +34,13 @@
 }
 
 @media screen and (max-width: 768px) {
-    /* .author-content {
-        text-align: justify;
-    } */
+   
 
     .author-content {
             padding: 0px 40px 20px 40px;
-            /* Reduce side padding for tablets */
+           
             margin: 50px 20px 50px 20px;
-            /* Reduce margin for smaller screens */
+            
     }
     .boxes-author {
         grid-template-columns: 1fr;
@@ -57,13 +55,11 @@
     }
         .boxes-author {
             grid-template-columns: 1fr;
-            /* Single column layout for mobile */
             gap: 10px;
-            /* Reduce gap for mobile */
         }
                  .box-author {
                      padding: 10px;
-                     /* Less padding for mobile */
+                    
                  }
 }
 

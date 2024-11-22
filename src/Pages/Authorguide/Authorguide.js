@@ -17,17 +17,18 @@ const Authorguide = () => {
       <div className="author-content">
         <div>
           Thank you for choosing to submit your paper to The International
-          Journal of Academic Excellence (IJAE). Following these guidelines will
-          ensure a smooth peer review, production, and publication process.
-          Please read and follow them closely to ensure your paper aligns with
-          the journal's standards.
+          Journal of English for Academic Excellence (IJEAE). Following these
+          guidelines will ensure a smooth peer review, production, and
+          publication process. Please read and follow them closely to ensure
+          your paper aligns with the journal's standards.
         </div>
 
         <div>
           <h2>Submission of Manuscript</h2>
           <p>
             Submit your manuscript as an MS Word file via email. The
-            International Journal of Academic Excellence (IJAE) Email:{" "}
+            International Journal of English for Academic Excellence (IJEAE)
+            Email:{" "}
             <a href="mailto:attraitdovinfedrick333@gmail.com">
               attraitdovinfedrick333@gmail.com
             </a>
@@ -166,7 +167,7 @@ const Authorguide = () => {
               <h3>Peer Review</h3>
               <ul>
                 <li>
-                  IJAE uses a double-blind peer review process to ensure
+                  IJEAE uses a double-blind peer review process to ensure
                   impartiality.
                 </li>
                 <li>
@@ -183,7 +184,7 @@ const Authorguide = () => {
               <h3>Copyright and Open Access</h3>
               <ul>
                 <li>
-                  Authors retain copyright to their work but grant IJAE first
+                  Authors retain copyright to their work but grant IJEAE first
                   publication rights.
                 </li>
                 <li>
@@ -218,14 +219,14 @@ const Authorguide = () => {
             Regulations on Minimum Qualifications for Appointment of Teachers
             and Other Academic Staff in Universities and Colleges and Measures
             for the Maintenance of Standards in Higher Education, 2018, The
-            International Journal of Academic Excellence (IJAE) adheres to
-            strict plagiarism guidelines to ensure the integrity of academic
-            publications. Our plagiarism policy follows the guidelines of the
-            UGC’s Promotion of Academic Integrity and Prevention of Plagiarism
-            in Higher Educational Institutions Regulations, 2018.
+            International Journal of English for Academic Excellence (IJEAE)
+            adheres to strict plagiarism guidelines to ensure the integrity of
+            academic publications. Our plagiarism policy follows the guidelines
+            of the UGC’s Promotion of Academic Integrity and Prevention of
+            Plagiarism in Higher Educational Institutions Regulations, 2018.
           </p>
 
-          <h3>Key Features of the IJAE Plagiarism Policy:</h3>
+          <h3>Key Features of the IJEAE Plagiarism Policy:</h3>
           <h4>Definition of Plagiarism</h4>
           <p>
             Plagiarism is defined as using another person's work, ideas, or
@@ -265,12 +266,12 @@ const Authorguide = () => {
             If plagiarism is detected, the manuscript will be rejected, and
             authors will be notified of the decision. In cases of confirmed
             plagiarism, authors may be prohibited from submitting future
-            manuscripts to IJAE.
+            manuscripts to IJEAE.
           </p>
 
           <h4>Ethical Considerations</h4>
           <p>
-            IJAE upholds the ethical standards outlined by the UGC to prevent
+            IJEAE upholds the ethical standards outlined by the UGC to prevent
             academic misconduct. All cases of academic dishonesty, including
             plagiarism, will be addressed according to these standards to ensure
             fair and ethical publishing practices.
@@ -287,15 +288,15 @@ const Authorguide = () => {
         <div>
           <h2>Article Processing Charges</h2>
           <p>
-            The International Journal of Academic Excellence (IJAE) is committed
-            to making high-quality research accessible to a broad audience
-            through open access. To support the costs of publishing, the
-            following fees apply:
+            The International Journal of English for Academic Excellence (IJEAE)
+            is committed to making high-quality research accessible to a broad
+            audience through open access. To support the costs of publishing,
+            the following fees apply:
           </p>
           <ul>
             <li>
               Article Submission Fee: ₹0.00 (INR) – There is no fee for
-              submitting an article to IJAE.
+              submitting an article to IJEAE.
             </li>
             <li>
               Article Processing Fee (APC): ₹1500 (INR) for Indian authors and
@@ -306,7 +307,7 @@ const Authorguide = () => {
         </div>
 
         <div style={{ fontWeight: "bold" }}>
-          Important Note: IJAE will never request APC payments to personal
+          Important Note: IJEAE will never request APC payments to personal
           accounts. All APC payments should only be made to the Academic
           Development Forum (ADF) (Publisher) account.
         </div>

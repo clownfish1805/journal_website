@@ -1,6 +1,9 @@
 .container-announcement{
     margin: 100px 100px 100px 100px;
 }
+.announcement-list{
+  font-size: 20px;
+}
 @media screen and (max-width: 768px) {
   .container-announcement{
     margin: 50px 50px 50px 50px;
@@ -15,6 +18,4 @@
         text-align: justify;
         font-size: 20px;
     }
-
-    
 }
