@@ -60,7 +60,7 @@ const Home = () => {
         <h3
           style={{ textAlign: "center", fontSize: "2rem", marginTop: "40px" }}
         >
-          <span style={{ color: "blue" }}>IJAE </span>encourages diverse forms
+          <span style={{ color: "blue" }}>IJEAE </span>encourages diverse forms
           of Scholarly work
         </h3>
       </div>
