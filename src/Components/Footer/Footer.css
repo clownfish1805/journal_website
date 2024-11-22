@@ -1,100 +1,99 @@
 .footer {
     background-color: #8fb7e3;
-    color: rgb(0, 0, 0);
+    color: #000;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    padding: 20px;
-    gap: 20px;
-    /* Ensure consistent spacing between sections */
+    padding: 5px 10px;
+    gap: 30px;
     flex-wrap: wrap;
-    /* Allow wrapping for smaller screens */
 }
 
 .footer-image {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 0 1 auto;
-    /* Ensure flexible width for consistent layout */
-    margin: 0;
-    /* Remove extra margins */
+    gap: 5px;
+    margin-left: 100px;
+
 }
 
 .footer-image img {
-    width: 130px;
+    width: 70px;
     height: auto;
     object-fit: contain;
     margin: 0;
-    /* Remove default margins around images */
+  
 }
 
 .footer-info,
 .footer-address {
-    font-size: 14px;
-    /* Use a consistent font size */
+    font-size: 20px;
+   
     text-align: center;
+    padding: 0 5px;
+    /* Compact padding */
     margin: 0;
-    padding: 0 10px;
-    /* Add padding for spacing inside elements */
+    /* Remove margin to avoid spacing between rows */
     flex: 1;
-    /* Ensure equal space sharing */
 }
 
 /* Responsive Styling */
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
-        /* Switch to vertical layout */
+        /* Stacked layout for tablets */
         align-items: center;
-        /* Center align content */
-        text-align: center;
+        padding: 5px;
+        /* Minimal padding for compact layout */
         gap: 15px;
-        /* Add space between sections */
+        /* Minimized space between sections */
     }
 
     .footer-image {
         flex-direction: row;
-        /* Ensure logos stay in one row */
-        gap: 10px;
-        /* Add some spacing between logos */
+        justify-content: center;
+        gap: 5px;
+        /* Minimal space between images */
+        margin: 0;
+        /* Ensure no extra spacing */
     }
 
     .footer-image img {
-        width: 100px;
-        /* Adjust image size */
+        width: 60px;
+        /* Smaller images for tablets */
     }
 
     .footer-info,
     .footer-address {
         font-size: 12px;
-        /* Reduce font size */
+        /* Compact text for tablets */
+        margin-top: 5px;
+        /* Ensure even spacing between text rows */
     }
 }
 
 @media (max-width: 420px) {
     .footer {
-        padding: 0px;
-      
+        padding: 5px;
+        gap: 10px;
     }
 
     .footer-image {
-            display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3px;
     }
 
-    .footer-image img {
-        width: 80px;
-        height: 90px;
-        align-items: center;
-        /* Scale down images further */
+    
+
+    .footer-info,
+    .footer-address {
+        font-size: 15px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
     }
-        .footer-info p,
-        .footer-address p {
-            font-size: 13px;
-        }
 }
