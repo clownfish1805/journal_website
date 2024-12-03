@@ -28,9 +28,7 @@ const Authorguide = () => {
             International Journal of English for Academic Excellence (IJEAE)
             <br></br>
             <span style={{ fontWeight: "bold" }}>Email: </span>
-            <a href="mailto:attraitdovinfedrick333@gmail.com">
-              attraitdovinfedrick333@gmail.com
-            </a>
+            <a href="mailto:editor.ijeae@gmail.com">editor.ijeae@gmail.com</a>
           </p>
 
           <p>

@@ -26,67 +26,71 @@ const Editorial = () => {
         <h2>
           <span style={{ color: "blue" }}>Editorial </span>Team
         </h2>
-        <div className="editorial-section">
-          <h3>Editor-in-Chief</h3>
-          <p>Mr. Attrait Dovin Fedrick S</p>
-
-          <h3>Associate Editor</h3>
-          <p>Dr. M. Richard Robert Raa</p>
-        </div>
-
-        <h2>
-          National <span style={{ color: "blue" }}>Editorial </span>Advisory
-          <span style={{ color: "blue" }}> Board</span>
-        </h2>
-        <p>
-          Our National Editorial Advisory Board comprises distinguished
-          academics from premier institutions across India. They contribute
-          insights and uphold the quality of scholarship within IJEAE.
-        </p>
-
         <div class="container-editorial">
           <div class="row-editorial">
             <div class="box-editorial">
-              <p>Dr. Joseph Mathew</p>
+              <h3>Editor-in-Chief</h3>
+              <p style={{ textAlign: "center" }}>Mr. Attrait Dovin Fedrick</p>
             </div>
             <div class="box-editorial">
-              <p>Prof. Prasanth Arokia Samy D</p>
-            </div>
-          </div>
-          <div class="row-editorial">
-            <div class="box-editorial">
-              <p>Prof. Caro Velma J</p>
-            </div>
-            <div class="box-editorial">
-              <p>Dr. B. S. Gomathi</p>
-            </div>
-          </div>
-          <div class="row-editorial">
-            <div class="box fifth-box-edit">
-              <p>Dr. Cynthiya Rose J S</p>
+              <h3>Associate Editor</h3>
+              <p>Dr. M. Richard Robert Raa</p>
             </div>
           </div>
         </div>
+      </div>
 
-        <h2>
-          International <span style={{ color: "blue" }}>Editorial </span>{" "}
-          Advisory <span style={{ color: "blue" }}>Board</span>
-        </h2>
-        <p>
-          IJEAE is committed to a global perspective on research and
-          scholarship. Our International Editorial Advisory Board includes
-          respected scholars from around the world who bring diverse expertise
-          to the journal, ensuring the relevance and impact of our published
-          work across borders.
-        </p>
-        <div class="container-editorial">
-          <div class="row-editorial">
-            <div class="box-editorial">
-              <p style={{ textAlign: "left" }}>Dr. Sreejith Ramachandran</p>
-            </div>
-            <div class="box-editorial">
-              <p>Dr. Gamaya K P</p>
-            </div>
+      <h2>
+        National <span style={{ color: "blue" }}>Editorial </span>Advisory
+        <span style={{ color: "blue" }}> Board</span>
+      </h2>
+      <p>
+        Our National Editorial Advisory Board comprises distinguished academics
+        from premier institutions across India. They contribute insights and
+        uphold the quality of scholarship within IJEAE.
+      </p>
+
+      <div class="container-editorial">
+        <div class="row-editorial">
+          <div class="box-editorial">
+            <p>Dr. Joseph Mathew</p>
+          </div>
+          <div class="box-editorial">
+            <p>Prof. Prasanth Arokia Samy D</p>
+          </div>
+        </div>
+        <div class="row-editorial">
+          <div class="box-editorial">
+            <p>Prof. Caro Velma J</p>
+          </div>
+          <div class="box-editorial">
+            <p>Dr. B. S. Gomathi</p>
+          </div>
+        </div>
+        <div class="row-editorial">
+          <div class="box fifth-box-edit">
+            <p>Dr. Cynthiya Rose J S</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>
+        International <span style={{ color: "blue" }}>Editorial </span> Advisory{" "}
+        <span style={{ color: "blue" }}>Board</span>
+      </h2>
+      <p>
+        IJEAE is committed to a global perspective on research and scholarship.
+        Our International Editorial Advisory Board includes respected scholars
+        from around the world who bring diverse expertise to the journal,
+        ensuring the relevance and impact of our published work across borders.
+      </p>
+      <div class="container-editorial">
+        <div class="row-editorial">
+          <div class="box-editorial">
+            <p style={{ textAlign: "left" }}>Dr. Sreejith Ramachandran</p>
+          </div>
+          <div class="box-editorial">
+            <p>Dr. Gamaya K P</p>
           </div>
         </div>
       </div>
