@@ -39,8 +39,8 @@ const Header = () => {
               Home
             </Link>
             <Link
-              to="/authorguide"
               className={`dropdown-wrapper ${
+                location.pathname === "/authorguide" ||
                 location.pathname === "/plagarism" ||
                 location.pathname === "/journalmetrics" ||
                 location.pathname === "/authorguide"
@@ -57,6 +57,7 @@ const Header = () => {
               )}
               {isGuidelinesDropdownOpen && (
                 <div className="dropdown">
+                  <Link to="/authorguide">Author Guide</Link>
                   <Link to="/plagarism">Plagarism policy</Link>
                   <Link to="/journalmetrics">Journal metrics</Link>
                 </div>

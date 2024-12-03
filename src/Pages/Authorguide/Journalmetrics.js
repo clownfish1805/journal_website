@@ -7,12 +7,12 @@ const Journalmetrics = () => {
   return (
     <>
       <Header />
-      <div className="full-screen-bg">
-        <div className="text-class" style={{ fontSize: "3rem" }}>
-          Journal
-          <span style={{ color: "blue" }}> Metrics</span>
-        </div>
+
+      <div className="heading-class">
+        Journal
+        <span style={{ color: "blue" }}> Metrics</span>
       </div>
+
       <div className="journal-container">
         <section className="journal-section">
           <h2 className="section-title">Publication Schedule</h2>
@@ -37,8 +37,8 @@ const Journalmetrics = () => {
         <section className="journal-section">
           <h2 className="section-title">Average Review Process Period</h2>
           <ul className="journal-list">
-            <li>10 days avg. from submission to the first decision.</li>
-            <li>15 days avg. from the first decision to acceptance.</li>
+            <li>15 days avg. from submission to the first decision.</li>
+            <li>60 days avg. from the first decision to acceptance.</li>
             <li>15 days avg. from acceptance to online publication.</li>
           </ul>
         </section>

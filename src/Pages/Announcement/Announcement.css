@@ -1,5 +1,5 @@
 .container-announcement{
-    margin: 100px 100px 100px 100px;
+    margin: 10px 100px 100px 100px;
 }
 .announcement-list{
   font-size: 20px;
@@ -9,6 +9,13 @@
     margin: 50px 50px 50px 50px;
     text-align: justify;
   }
+}
+
+.heading-class{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-top: 30px;
 }
 
 @media (max-width: 480px) {

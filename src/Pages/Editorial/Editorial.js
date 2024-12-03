@@ -7,11 +7,10 @@ const Editorial = () => {
   return (
     <>
       <Header />
-      <div className="full-screen-bg">
-        <div className="text-class" style={{ fontSize: "3rem" }}>
-          Editorial
-          <span style={{ color: "blue" }}> Board</span>
-        </div>
+
+      <div className="heading-class">
+        Editorial
+        <span style={{ color: "blue" }}> Board</span>
       </div>
 
       <div className="editorial-content">
@@ -80,6 +79,16 @@ const Editorial = () => {
           to the journal, ensuring the relevance and impact of our published
           work across borders.
         </p>
+        <div class="container-editorial">
+          <div class="row-editorial">
+            <div class="box-editorial">
+              <p style={{ textAlign: "left" }}>Dr. Sreejith Ramachandran</p>
+            </div>
+            <div class="box-editorial">
+              <p>Dr. Gamaya K P</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <Footer />

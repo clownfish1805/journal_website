@@ -14,48 +14,14 @@ const Home = () => {
   return (
     <>
       <Header />
-      <div className="full-screen-bg">
-        <div className="text-class">
-          <span style={{ color: "blue" }}>International </span>
-          Journal of English for
-          <br></br>
-          Academic <span style={{ color: "blue" }}>Excellence</span>
-          <div>
-            <button
-              style={{
-                backgroundColor: "blue",
-                borderRadius: "25px",
-                padding: "20px 40px",
-                fontSize: "18px",
-                color: "white",
-                border: "none",
-                fontWeight: "bold",
-                textShadow: "inherit",
-                marginTop: "10px",
-                cursor: "pointer",
-              }}
-              onClick={handleContact}
-            >
-              Contact
-            </button>
-            {/* <button
-              style={{
-                borderColor: "blue",
-                borderRadius: "25px",
-                padding: "20px 20px",
-                fontSize: "18px",
-                color: "blue",
-                marginLeft: "10px",
-                fontWeight: "bold",
-                textShadow: "initial",
-                marginTop: "10px",
-              }}
-            >
-              Learn more
-            </button> */}
-          </div>
-        </div>
+
+      <div className="heading-class">
+        <span style={{ color: "blue" }}>International </span>
+        Journal of English for
+        <br></br>
+        Academic <span style={{ color: "blue" }}>Excellence</span>
       </div>
+
       <div>
         <h3
           style={{ textAlign: "center", fontSize: "2rem", marginTop: "40px" }}

@@ -31,31 +31,32 @@ const YearsPage = () => {
   };
 
   return (
-    <>
+    <div className="years-page">
       <Header />
-      <div className="full-screen-bg">
-        <div className="text-class">
+      <div className="content">
+        <div className="heading-class">
           <span style={{ color: "blue" }}>Publication </span>
           Archives
         </div>
-      </div>
-      <div className="years-container">
-        {years.length > 0 ? (
-          years.map((year) => (
-            <div
-              key={year}
-              className="year-box"
-              onClick={() => handleYearClick(year)} // Trigger the navigation when clicked
-            >
-              {year}
-            </div>
-          ))
-        ) : (
-          <p>Loading years...</p> // Show loading message if data is not loaded
-        )}
+
+        <div className="years-container">
+          {years.length > 0 ? (
+            years.map((year) => (
+              <div
+                key={year}
+                className="year-box"
+                onClick={() => handleYearClick(year)} // Trigger the navigation when clicked
+              >
+                {year}
+              </div>
+            ))
+          ) : (
+            <p>Loading years...</p> // Show loading message if data is not loaded
+          )}
+        </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

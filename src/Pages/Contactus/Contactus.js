@@ -5,13 +5,11 @@ import "./Contactus.css";
 
 const Contactus = () => {
   return (
-    <>
+    <div className="contactus-page">
       <Header />
-      <div className="full-screen-bg">
-        <div className="text-class" style={{ fontSize: "3rem" }}>
-          Contact
-          <span style={{ color: "blue" }}> Us</span>
-        </div>
+      <div className="heading-class">
+        Contact
+        <span style={{ color: "blue" }}> Us</span>
       </div>
       <div className="container-contact">
         <p style={{ fontWeight: "bold" }}>THE PUBLISHER</p>
@@ -28,7 +26,7 @@ const Contactus = () => {
         </p>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

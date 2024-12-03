@@ -7,11 +7,9 @@ const Authorguide = () => {
   return (
     <>
       <Header />
-      <div className="full-screen-bg">
-        <div className="text-class" style={{ fontSize: "3rem" }}>
-          Author
-          <span style={{ color: "blue" }}> Guidelines</span>
-        </div>
+      <div className="heading-class">
+        Author
+        <span style={{ color: "blue" }}> Guidelines</span>
       </div>
 
       <div className="author-content">
@@ -104,43 +102,94 @@ const Authorguide = () => {
         </div>
 
         <div>
-          <h2>Research paper structure</h2>
+          <h2>Research Paper Structure</h2>
           <ol>
             <li>
-              Front Page: Title of the Manuscript and Author/s details
-              (*Corresponding author)
+              <strong>Front Page/First Page Contents:</strong>
+              <ul style={{ listStyleType: "none" }}>
+                <li>
+                  a. Title of the Manuscript and Author/s details
+                  (*Corresponding author).
+                </li>
+              </ul>
             </li>
             <li>
-              Abstract: Provide a concise abstract (250–300 words) summarizing
-              the manuscript’s key themes.
+              <strong>Second Page Contents:</strong>
+              <ul style={{ listStyleType: "none" }}>
+                <li>
+                  a. <strong>Abstract:</strong> Provide a concise abstract
+                  (250–300 words) summarising the manuscript’s key themes.
+                </li>
+                <li>
+                  b. <strong>Keywords:</strong> 5 to 6 keywords.
+                </li>
+              </ul>
             </li>
             <li>
-              Introduction: Clearly state the research question, its
-              significance, and the knowledge gap the study addresses.
+              <strong>Main Content:</strong>
+              <ul style={{ listStyleType: "none" }}>
+                <li>
+                  a. <strong>Introduction:</strong> Clearly state the research
+                  question, its significance, and the knowledge gap the study
+                  addresses.
+                </li>
+                <li>
+                  b. <strong>Literature Review:</strong> Offer a critical review
+                  of existing literature, highlighting the relevance and
+                  importance of the research question.
+                </li>
+                <li>
+                  c. <strong>Methodology:</strong> Detail the research design,
+                  data collection, and analysis techniques.
+                </li>
+                <li>
+                  d. <strong>Results:</strong> Present findings with supporting
+                  tables, figures, or graphs as needed.
+                </li>
+                <li>
+                  e. <strong>Discussion:</strong> Interpret the results,
+                  relating them to the research question and relevant
+                  literature.
+                </li>
+                <li>
+                  f. <strong>Conclusion:</strong> Summarise key findings,
+                  implications, and recommendations for further research or
+                  policy.
+                </li>
+              </ul>
             </li>
             <li>
-              Literature Review: Offer a critical review of existing literature,
-              highlighting the relevance and importance of the research
-              question.
+              <strong>References:</strong>
+              <ul style={{ listStyleType: "none" }}>
+                <li>
+                  a. All manuscripts must follow the American Psychological
+                  Association, Seventh Edition (APA-7) referencing style.
+                </li>
+                <li>
+                  b. Ensure that every reference listed in the manuscript has a
+                  corresponding in-text citation.
+                </li>
+                <li>
+                  c. References should be accurate, complete, and formatted
+                  according to APA-7 guidelines.
+                </li>
+                <li>
+                  d. For detailed instructions on APA-7 formatting, authors may
+                  consult the official APA Manual or reputable online resources.
+                </li>
+              </ul>
             </li>
-            <li>
-              Methodology: Detail the research design, data collection, and
-              analysis techniques.
-            </li>
-            <li>
-              Results: Present findings with supporting tables, figures, or
-              graphs as needed.
-            </li>
-            <li>
-              Discussion: Interpret the results, relating them to the research
-              question and relevant literature.
-            </li>
-            <li>
-              Conclusion: Summarize key findings, implications, and
-              recommendations for further research or policy.
-            </li>
-            <li>References: Use APA format.</li>
           </ol>
+          <p>
+            <strong>Paper Link:</strong>{" "}
+            <a
+              href="https://drive.google.com/drive/folders/1YFJR05SL9MESboqpZcm-jNmFXubpcIPv?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Journal Template
+            </a>
+          </p>
         </div>
 
         <div>

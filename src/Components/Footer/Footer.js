@@ -11,9 +11,9 @@ const Footer = () => {
           <img src={logo}></img>
           <img src={grouplogo}></img>
         </div>
-        <div className="footer-info">&copy;Copyright @ IJAE2022</div>
+        <div className="footer-info">&copy; 2025 IJEAE</div>
         <div className="footer-address" style={{ marginRight: "10px" }}>
-          Email :{" "}
+          Email:{" "}
           <a href="mailto:editor.ijeae@gmail.com">editor.ijeae@gmail.com</a>
         </div>
       </div>

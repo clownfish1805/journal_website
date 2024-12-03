@@ -7,11 +7,9 @@ const Plagarismpolicy = () => {
   return (
     <>
       <Header />
-      <div className="full-screen-bg">
-        <div className="text-class" style={{ fontSize: "3rem" }}>
-          Plagarism
-          <span style={{ color: "blue" }}> Policy</span>
-        </div>
+      <div className="heading-class">
+        Plagarism
+        <span style={{ color: "blue" }}> Policy</span>
       </div>
       <div className="policy-intro">
         <p>

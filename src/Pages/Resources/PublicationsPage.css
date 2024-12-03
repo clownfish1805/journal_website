@@ -1,18 +1,47 @@
-.publication-box {
-    padding: 30px 30px 30px 30px;
+/* Ensure the page occupies the full viewport height */
+.publications-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Full viewport height */
 }
 
-@media screen and
-(max-width: 768px) {
-    .publication-box p{
+/* Allow the content to take up space and push footer down */
+.content {
+    flex: 1;
+    /* Pushes the footer to the bottom */
+}
+
+/* Publications container styling */
+.publications-container {
+    padding: 30px 100px;
+}
+
+.publication-box {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+}
+
+/* Footer styling to ensure it remains at the bottom */
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .publication-box p {
         font-size: 23px;
     }
 }
 
 @media screen and (max-width: 460px) {
-    .publication-box{
-        padding: 20px 10px 10px 10px;
+    .publication-box {
+        padding: 20px 10px;
     }
+
     .publication-box p {
         font-size: 20px;
     }

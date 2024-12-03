@@ -7,14 +7,12 @@ const Announcement = () => {
   return (
     <>
       <Header />
-      <div className="full-screen-bg">
-        <div className="text-class">
+
+      <div className="container-announcement">
+        <div className="heading-class">
           Announcement
           <span style={{ color: "blue" }}> Board</span>
         </div>
-      </div>
-
-      <div className="container-announcement">
         <section className="announcement-section">
           <h2>Reduced Article Processing Fee</h2>
           <p>
@@ -73,21 +71,6 @@ const Announcement = () => {
             </a>
           </p>
         </section>
-        {/* 
-        <section className="announcement-section">
-          <h2>Contact Information</h2>
-          <p>
-            <strong>Editor-in-Chief:</strong> Mr. Attrait Dovin Fedrick S
-          </p>
-          <p>
-            <strong>Email:</strong>{" "}
-            <a href="mailto:editor.ijeae@gmail.com">editor.ijeae@gmail.com</a>
-          </p>
-          <p>
-            Thank you for your cooperation, and stay tuned for the latest
-            academic contributions each month!
-          </p>
-        </section> */}
 
         <footer className="announcement-footer">
           <p>
@@ -96,9 +79,7 @@ const Announcement = () => {
             Attrait Dovin Fedrick
             <br></br>
             <span style={{ fontWeight: "bold" }}>Email: </span>
-            <a href="mailto:attraitdovinfedrick333@gmail.com">
-              attraitdovinfedrick333@gmail.com
-            </a>
+            <a href="mailto:editor.ijeae@gmail.com">editor.ijeae@gmail.com</a>
             <p>
               Thank you for your cooperation, and stay tuned for the latest
               academic contributions each month!

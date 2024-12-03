@@ -25,39 +25,38 @@ const PublicationsPage = () => {
   }, [year, volume]);
 
   return (
-    <>
+    <div className="publications-page">
       <Header />
-      <div className="full-screen-bg">
-        <div className="text-class">
+      <div className="content">
+        <div className="heading-class">
           Archives of
           <span style={{ color: "blue" }}> {year} </span>
         </div>
-      </div>
 
-      <div className="publications-container">
-        {publications.length > 0 ? (
-          publications.map((publication, index) => (
-            <div key={publication.id} className="publication-box">
-              <p>
-                {index + 1}. {publication.title}
-                <a
-                  href={publication.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ marginLeft: "10px" }}
-                >
-                  Get PDF
-                </a>
-              </p>
-            </div>
-          ))
-        ) : (
-          <p>No publications found for this volume.</p>
-        )}
+        <div className="publications-container">
+          {publications.length > 0 ? (
+            publications.map((publication, index) => (
+              <div key={publication.id} className="publication-box">
+                <p>
+                  {index + 1}. {publication.title}
+                  <a
+                    href={publication.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ marginLeft: "10px" }}
+                  >
+                    Get PDF
+                  </a>
+                </p>
+              </div>
+            ))
+          ) : (
+            <p>No publications found for this volume.</p>
+          )}
+        </div>
       </div>
-
       <Footer />
-    </>
+    </div>
   );
 };
 
