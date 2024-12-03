@@ -24,42 +24,67 @@ const Authorguide = () => {
         <div>
           <h2>Submission of Manuscript</h2>
           <p>
-            Submit your manuscript as an MS Word file via email. The
-            International Journal of English for Academic Excellence (IJEAE)
-            <br></br>
-            <span style={{ fontWeight: "bold" }}>Email: </span>
+            Submit your manuscript as an <strong>MS Word file</strong>{" "}
+            accompanied by a<strong> Plagiarism Report</strong> via email to:
+          </p>
+          <p>
+            <strong>Editor</strong>
+            <br />
+            <strong>
+              The International Journal of English Academic Excellence (IJEAE)
+            </strong>
+            <br />
+            <strong>Email:</strong>
             <a href="mailto:editor.ijeae@gmail.com">editor.ijeae@gmail.com</a>
           </p>
 
           <p>
-            Submissions will be initially assessed by an editor for relevance
-            and alignment with the journal's scope. Manuscripts that meet the
-            criteria will proceed to a double-blind peer review. Incomplete
-            submissions will be deleted without notice.
+            All submissions will undergo an <strong>initial assessment</strong>{" "}
+            by the editorial team to determine relevance and alignment with the
+            journal's scope. Manuscripts meeting these criteria will proceed to
+            a<strong> double-blind peer review</strong>. Incomplete submissions
+            or those not adhering to guidelines may be rejected without notice.
           </p>
 
-          <p>Before submission, ensure you:</p>
-
+          <h3>Pre-Submission Checklist</h3>
+          <p>Before submitting your manuscript, ensure the following:</p>
           <ul>
             <li>
-              Obtain permissions for all included materials (e.g., images,
-              datasets).
+              <strong>Permissions:</strong> Obtain necessary permissions for all
+              materials included in your submission (e.g., images, datasets, or
+              excerpts).
             </li>
             <li>
-              Confirm that all listed authors have consented to authorship.
+              <strong>Authorship Consent:</strong> Confirm that all listed
+              authors have consented to their inclusion and agree on the
+              manuscript's content.
             </li>
             <li>
-              Acquire ethical clearance where applicable, according to the
-              study's country regulations.
+              <strong>Ethical Clearance:</strong> Secure appropriate ethical
+              approval where applicable, adhering to the legal and ethical
+              requirements of your study’s country.
             </li>
           </ul>
 
+          <h3>Additional Notes</h3>
           <p>
-            Editors may desk reject manuscripts that do not meet quality
-            standards. For the best chance of acceptance, ensure a
-            well-structured study design and clear argumentation. Titles should
-            be concise, and abstracts must be self-contained summaries of the
-            work. Use the checklist below to finalize your submission.
+            Editors may <strong>desk reject manuscripts</strong> that do not
+            meet quality standards. For the best chance of acceptance, ensure:
+          </p>
+          <ul>
+            <li>
+              A <strong>well-structured study design</strong> and clear
+              argumentation.
+            </li>
+            <li>
+              A concise <strong>title</strong> and a{" "}
+              <strong>self-contained abstract </strong>
+              summarizing the work.
+            </li>
+          </ul>
+          <p>
+            Adhering to these guidelines will streamline the submission process
+            and enhance the likelihood of acceptance.
           </p>
         </div>
 
@@ -96,6 +121,10 @@ const Authorguide = () => {
               Word Count: Manuscripts should be between 1,000 and 8,000 words,
               including tables, references, captions, footnotes, and endnotes.
             </li>
+            <li>
+              Spelling: Throughout the manuscript, authors are required to use
+              British English consistently.
+            </li>
           </ul>
         </div>
 
@@ -106,8 +135,8 @@ const Authorguide = () => {
               <strong>Front Page/First Page Contents:</strong>
               <ul style={{ listStyleType: "none" }}>
                 <li>
-                  a. Title of the Manuscript and Author/s details
-                  (*Corresponding author).
+                  <strong>a. </strong> Title of the Manuscript and Author/s
+                  details (*Corresponding author).
                 </li>
               </ul>
             </li>
@@ -115,11 +144,11 @@ const Authorguide = () => {
               <strong>Second Page Contents:</strong>
               <ul style={{ listStyleType: "none" }}>
                 <li>
-                  a. <strong>Abstract:</strong> Provide a concise abstract
+                  <strong>a. Abstract:</strong> Provide a concise abstract
                   (250–300 words) summarising the manuscript’s key themes.
                 </li>
                 <li>
-                  b. <strong>Keywords:</strong> 5 to 6 keywords.
+                  <strong>b. Keywords:</strong> 5 to 6 keywords.
                 </li>
               </ul>
             </li>
@@ -127,30 +156,30 @@ const Authorguide = () => {
               <strong>Main Content:</strong>
               <ul style={{ listStyleType: "none" }}>
                 <li>
-                  a. <strong>Introduction:</strong> Clearly state the research
+                  <strong>a. Introduction:</strong> Clearly state the research
                   question, its significance, and the knowledge gap the study
                   addresses.
                 </li>
                 <li>
-                  b. <strong>Literature Review:</strong> Offer a critical review
+                  <strong>b.Literature Review:</strong> Offer a critical review
                   of existing literature, highlighting the relevance and
                   importance of the research question.
                 </li>
                 <li>
-                  c. <strong>Methodology:</strong> Detail the research design,
+                  <strong>c. Methodology:</strong> Detail the research design,
                   data collection, and analysis techniques.
                 </li>
                 <li>
-                  d. <strong>Results:</strong> Present findings with supporting
+                  <strong>d. Results:</strong> Present findings with supporting
                   tables, figures, or graphs as needed.
                 </li>
                 <li>
-                  e. <strong>Discussion:</strong> Interpret the results,
+                  <strong>e. Discussion:</strong> Interpret the results,
                   relating them to the research question and relevant
                   literature.
                 </li>
                 <li>
-                  f. <strong>Conclusion:</strong> Summarise key findings,
+                  <strong>f. Conclusion:</strong> Summarise key findings,
                   implications, and recommendations for further research or
                   policy.
                 </li>
@@ -160,20 +189,22 @@ const Authorguide = () => {
               <strong>References:</strong>
               <ul style={{ listStyleType: "none" }}>
                 <li>
-                  a. All manuscripts must follow the American Psychological
-                  Association, Seventh Edition (APA-7) referencing style.
+                  <strong>a. </strong>All manuscripts must follow the American
+                  Psychological Association, Seventh Edition (APA-7) referencing
+                  style.
                 </li>
                 <li>
-                  b. Ensure that every reference listed in the manuscript has a
-                  corresponding in-text citation.
+                  <strong>b. </strong>Ensure that every reference listed in the
+                  manuscript has a corresponding in-text citation.
                 </li>
                 <li>
-                  c. References should be accurate, complete, and formatted
-                  according to APA-7 guidelines.
+                  <strong>c. </strong>References should be accurate, complete,
+                  and formatted according to APA-7 guidelines.
                 </li>
                 <li>
-                  d. For detailed instructions on APA-7 formatting, authors may
-                  consult the official APA Manual or reputable online resources.
+                  <strong>d. </strong>For detailed instructions on APA-7
+                  formatting, authors may consult the official APA Manual or
+                  reputable online resources.
                 </li>
               </ul>
             </li>

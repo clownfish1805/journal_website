@@ -35,16 +35,16 @@ const Home = () => {
           <div class="box">
             <h3>Research Articles</h3>
             <p>
-              Comprehensive studies that present original research findings and
-              contribute new insights to the academic community.
+              Comprehensive studies that present original research findings,
+              offering new insights into English literature, language,
+              linguistics and pedagogy.
             </p>
           </div>
           <div class="box">
             <h3>Review Articles</h3>
             <p>
-              In-depth analyses of current developments in a specific field,
-              summarizing recent research and identifying trends and future
-              directions.
+              In-depth analyses of current developments, summarising recent
+              scholarship and identifying emerging trends in English studies.
             </p>
           </div>
         </div>
@@ -52,15 +52,17 @@ const Home = () => {
           <div class="box">
             <h3>Short Communications</h3>
             <p>
-              Brief reports on significant research developments or preliminary
-              findings that warrant immediate dissemination.
+              Brief reports on significant research developments, innovative
+              teaching practices, or preliminary findings that warrant immediate
+              dissemination.
             </p>
           </div>
           <div class="box">
             <h3>Case Reports/Case Series</h3>
             <p>
-              Detailed reports on particular cases or series that contribute to
-              understanding complex academic phenomena.
+              Detailed accounts of unique literary, linguistic, or pedagogical
+              phenomena, contributing to a deeper understanding of complex
+              issues.
             </p>
           </div>
         </div>
@@ -68,25 +70,34 @@ const Home = () => {
           <div class="box fifth-box">
             <h3>Conference Proceedings</h3>
             <p>
-              Selected papers from academic conferences, providing broader
-              dissemination of important research presented at such events.
+              Selected papers from academic conferences, highlighting key
+              advancements in English literature and language research.
             </p>
           </div>
         </div>
+      </div>
+
+      <div
+        className="about-journal"
+        style={{ fontSize: "1.3rem", lineHeight: "1.6" }}
+      >
+        By supporting a range of research types, IJEAE aims to bridge
+        theoretical frameworks with practical applications, creating a dynamic
+        space for knowledge sharing that enriches both academic and professional
+        communities within the field of English studies.  
       </div>
 
       <div className="about-journal">
         <h3>About the Journal</h3>
         <div className="journal-info">
           The International Journal of English for Academic Excellence (IJEAE)
-          is a monthly peer-reviewed, open-access journal published by the
-          Academic Development Forum (ADF), India. Launched in 2024, IJEAE
+          is a bi-monthly peer-reviewed, open-access journal published by the
+          Academic Development Forum (ADF), India. Launched in 2024, the IJEAE
           serves as a premier platform for interdisciplinary scholarship,
-          inviting contributions from researchers and practitioners across a
-          variety of academic fields. With a focus on high-quality research in
-          social sciences, humanities and educational sciences, the journal
-          seeks to foster academic discourse and promote innovation in these
-          areas.
+          focusing exclusively on English literature and language. The journal
+          invites contributions from researchers and practitioners exploring
+          diverse facets of these fields, fostering academic discourse and
+          promoting innovation.
         </div>
       </div>
       <Footer />

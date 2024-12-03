@@ -3,6 +3,7 @@
 }
 .announcement-list{
   font-size: 20px;
+  margin-top: 0px;
 }
 @media screen and (max-width: 768px) {
   .container-announcement{

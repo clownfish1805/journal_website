@@ -57,15 +57,16 @@ const Journalmetrics = () => {
               <span style={{ fontWeight: "bold" }}>
                 Article Submission Fee :
               </span>{" "}
-              ₹0.00 (INR). No fee for submissions.
+              ₹0.00 (INR). <br></br>There is no fee for submitting an article to
+              IJEAE.
             </li>
             <li>
               <span style={{ fontWeight: "bold" }}>
                 Article Processing Fee (APC):
               </span>{" "}
-              ₹1500 (INR)/ 30$. Upon acceptance, an Article Processing Charge
-              (APC) of ₹1500 will be required for Indian authors and 30$ for
-              foreign authors. This fee covers publication costs and ensures
+              ₹1500 (INR)/ 30$. <br></br>Upon acceptance, an Article Processing
+              Charge (APC) of ₹1500 will be required for Indian authors and 30$
+              for foreign authors. This fee covers publication costs and ensures
               that your article remains freely available online.
             </li>
           </ul>
