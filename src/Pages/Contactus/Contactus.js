@@ -16,6 +16,7 @@ const Contactus = () => {
         <p>
           Academic Development Forum (ADF) <br></br>Email:
           <a href="mailto:academicdevelopmentforum24@gmail.com">
+            {" "}
             academicdevelopmentforum24@gmail.com
           </a>
         </p>
