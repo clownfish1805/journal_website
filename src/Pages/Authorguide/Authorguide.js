@@ -14,11 +14,11 @@ const Authorguide = () => {
 
       <div className="author-content">
         <div>
-          Thank you for choosing to submit your paper to The International
-          Journal of English for Academic Excellence (IJEAE). Following these
-          guidelines will ensure a smooth peer review, production, and
-          publication process. Please read and follow them closely to ensure
-          your paper aligns with the journal's standards.
+          Thank you for considering the International Journal of English for
+          Academic Excellence (IJEAE) for your research publication. Adhering to
+          these guidelines will ensure a smooth peer review, production and
+          publication process. Please read them carefully to align your
+          submission with the journal’s standards.
         </div>
 
         <div>
@@ -31,7 +31,8 @@ const Authorguide = () => {
             <strong>Editor</strong>
             <br />
             <strong>
-              The International Journal of English Academic Excellence (IJEAE)
+              The International Journal of English for Academic Excellence
+              (IJEAE)
             </strong>
             <br />
             <strong>Email:</strong>

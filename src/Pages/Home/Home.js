@@ -27,7 +27,7 @@ const Home = () => {
           style={{ textAlign: "center", fontSize: "2rem", marginTop: "40px" }}
         >
           <span style={{ color: "blue" }}>IJEAE </span>encourages diverse forms
-          of Scholarly work
+          of scholarly work
         </h3>
       </div>
       <div class="container">

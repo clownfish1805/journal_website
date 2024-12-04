@@ -71,12 +71,12 @@ const Journalmetrics = () => {
             </li>
           </ul>
           <p>
-            <strong>Payment Note:</strong> IJEAE will never request Article
-            Processing Charge (APC) payments to personal accounts.<br></br> All
-            APC payments should be made exclusively to the official account of
-            the Academic Development Forum (Publisher). <br></br>Account details
-            will be provided only after the manuscript has been accepted for
-            publication.
+            <strong>Payment Note:</strong>
+            <br></br>IJEAE will never request APC payments to personal accounts.
+            All APC payments should be made exclusively to the official account
+            of the Academic Development Forum (Publisher). Account details will
+            be provided only after the manuscript has been accepted for
+            publication
           </p>
         </section>
       </div>
