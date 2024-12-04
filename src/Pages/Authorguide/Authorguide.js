@@ -80,7 +80,7 @@ const Authorguide = () => {
             <li>
               A concise <strong>title</strong> and a{" "}
               <strong>self-contained abstract </strong>
-              summarizing the work.
+              summarising the work.
             </li>
           </ul>
           <p>
