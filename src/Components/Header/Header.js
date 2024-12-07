@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Header.css";
 import logo from "./../../Assets/logo.svg";
 import { FaChevronDown, FaChevronUp, FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   const [isGuidelinesDropdownOpen, setIsGuidelinesDropdownOpen] =
     useState(false);
@@ -29,7 +30,12 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <img src={logo} alt="Journal Website Logo" className="logo" />
+        <img
+          src={logo}
+          alt="Journal Website Logo"
+          className="logo"
+          onClick={() => navigate("/")} // Navigates to the homepage
+        />
         <div className={`nav-container ${isNavOpen ? "active" : ""}`}>
           <nav className="nav">
             <Link
