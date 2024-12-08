@@ -2,47 +2,46 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
-import "./PublicationsPage.css";
+import "./SpecialpublicationsPage.css";
 
-const PublicationsPage = () => {
+const SpecialpublicationsPage = () => {
   const { year, volume, issue } = useParams();
   const [publications, setPublications] = useState([]);
-  const [isSpecialIssue, setIsSpecialIssue] = useState(false);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchSpecialPublications = async () => {
       try {
-        const specialIssueResponse = await fetch(
-          `https://publication-backend-klr9.onrender.com/publications?year=${year}&volume=${volume}&issue=${issue}`
+        const response = await fetch(
+          `https://publication-backend-klr9.onrender.com/special-issues?year=${year}&volume=${volume}&issue=${issue}`
         );
-
-        const specialIssueData = await specialIssueResponse.json();
-
-        if (specialIssueData.length > 0) {
-          setIsSpecialIssue(true);
-          setPublications(specialIssueData);
-        }
+        const data = await response.json();
+        setPublications(data);
       } catch (error) {
-        console.error("Error fetching data from backend:", error);
+        console.error("Error fetching special publications:", error);
       }
     };
 
-    fetchData();
+    if (year && volume && issue) {
+      fetchSpecialPublications();
+    }
   }, [year, volume, issue]);
 
   return (
-    <div className="publications-page">
+    <div className="special-publications-page">
       <Header />
       <div className="content">
         <div className="heading-class">
-          <span style={{ color: "blue" }}>Regular Issue Publications</span>
-          <br></br> {year}/ Volume {volume}
+          <span style={{ color: "white", backgroundColor: "#f39c12" }}>
+            Special Issue Publications
+          </span>
+          <br></br>
+          {year}/ Volume {volume}
         </div>
 
         <div className="publications-container">
           {publications.length > 0 ? (
             publications.map((publication, index) => (
-              <div key={publication._id || index} className="publication-box">
+              <div key={publication.id || index} className="publication-box">
                 <p>
                   {index + 1}. {publication.title}
                   <a
@@ -57,7 +56,7 @@ const PublicationsPage = () => {
               </div>
             ))
           ) : (
-            <p>No publications found for this issue.</p>
+            <p>No publications found for this special issue.</p>
           )}
         </div>
       </div>
@@ -66,4 +65,4 @@ const PublicationsPage = () => {
   );
 };
 
-export default PublicationsPage;
+export default SpecialpublicationsPage;

@@ -1,48 +1,47 @@
-/* Ensure the page occupies the full viewport height */
+
 .publications-page {
     display: flex;
+ 
     flex-direction: column;
+  
     min-height: 100vh;
-    /* Full viewport height */
+  
 }
 
-/* Allow the content to take up space and push footer down */
 .content {
     flex: 1;
-    /* Pushes the footer to the bottom */
+    
+    padding: 20px;
 }
 
-/* Publications container styling */
+
 .publications-container {
-    padding: 30px 100px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
+
 
 .publication-box {
-    padding: 20px;
-    background-color: #f9f9f9;
+    width: 100%;
+    padding: 3px;
+    background-color: #fcfcfc;
     margin-bottom: 15px;
+    box-sizing: border-box;
 }
 
-/* Footer styling to ensure it remains at the bottom */
-footer {
-    background-color: #f8f9fa;
-    padding: 10px;
-    text-align: center;
-}
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    .publication-box p {
-        font-size: 23px;
-    }
-}
 
 @media screen and (max-width: 460px) {
     .publication-box {
-        padding: 20px 10px;
+        width: 100%;
     }
 
     .publication-box p {
-        font-size: 20px;
+        font-size: 1.3rem;
+    }
+
+    .heading-class {
+        font-size: 1.5rem;
     }
 }

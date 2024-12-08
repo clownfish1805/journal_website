@@ -9,14 +9,14 @@ import Editorial from "./Pages/Editorial/Editorial";
 import YearsPage from "./Pages/Resources/YearsPage";
 import VolumesPage from "./Pages/Resources/VolumesPage";
 import PublicationsPage from "./Pages/Resources/PublicationsPage";
+
 import Plagarismpolicy from "./Pages/Authorguide/Plagarismpolicy";
 import Journalmetrics from "./Pages/Authorguide/Journalmetrics";
+import SpecialPublicationsPage from "./Pages/Resources/SpecialpublicationsPage";
 
 function App() {
   return (
     <Routes>
-      {" "}
-      {/* Keep Routes, but remove Router here */}
       <Route path="/" element={<Home />} />
       <Route path="/contactus" element={<Contactus />} />
       <Route path="/announcement" element={<Announcement />} />
@@ -27,8 +27,12 @@ function App() {
       <Route path="/years" element={<YearsPage />} />
       <Route path="/volumes/:year" element={<VolumesPage />} />
       <Route
-        path="/publications/:year/:volume"
+        path="/publications/:year/:volume/:issue"
         element={<PublicationsPage />}
+      />
+      <Route
+        path="/special-publications/:year/:volume/:issue"
+        element={<SpecialPublicationsPage />}
       />
     </Routes>
   );

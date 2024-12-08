@@ -31,47 +31,43 @@
 .footer-info,
 .footer-address {
     font-size: 20px;
-   
     text-align: center;
     padding: 0 5px;
-    /* Compact padding */
     margin: 0;
-    /* Remove margin to avoid spacing between rows */
     flex: 1;
 }
 
+.footer-info{
+    margin-left: 180px;
+}
 /* Responsive Styling */
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
-        /* Stacked layout for tablets */
         align-items: center;
         padding: 5px;
-        /* Minimal padding for compact layout */
         gap: 15px;
-        /* Minimized space between sections */
     }
 
     .footer-image {
         flex-direction: row;
         justify-content: center;
         gap: 5px;
-        /* Minimal space between images */
+       
         margin: 0;
-        /* Ensure no extra spacing */
     }
 
     .footer-image img {
         width: 60px;
-        /* Smaller images for tablets */
     }
 
     .footer-info,
     .footer-address {
-        font-size: 12px;
-        /* Compact text for tablets */
+        font-size: 18px;
         margin-top: 5px;
-        /* Ensure even spacing between text rows */
+    }
+    .footer-info{
+        margin: 0;
     }
 }
 
@@ -86,8 +82,6 @@
         justify-content: center;
         gap: 3px;
     }
-
-    
 
     .footer-info,
     .footer-address {

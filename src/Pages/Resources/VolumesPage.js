@@ -2,76 +2,106 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
-import "./YearVolumesList.css";
+import "./VolumesPage.css";
 
 const VolumesPage = () => {
   const { year } = useParams();
-  const [volumes, setVolumes] = useState([]);
-  const [volumeData, setVolumeData] = useState({});
+  const [issuesData, setIssuesData] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchVolumes = async () => {
+    const fetchVolumesAndIssues = async () => {
       try {
         const response = await fetch(
           `https://publication-backend-klr9.onrender.com/volumes?year=${year}`
         );
-        const data = await response.json();
-        setVolumes(data);
 
-        const volumesData = {};
-        for (const volume of data) {
-          const publicationsResponse = await fetch(
-            `https://publication-backend-klr9.onrender.com/publications?year=${year}&volume=${volume}`
-          );
-          const publications = await publicationsResponse.json();
-          volumesData[volume] = publications.length;
+        if (!response.ok) {
+          throw new Error("Failed to fetch volumes.");
         }
-        setVolumeData(volumesData);
+
+        const volumes = await response.json();
+        console.log("Fetched volumes:", volumes);
+
+        const issuePromises = volumes.map((volume) =>
+          fetch(
+            `https://publication-backend-klr9.onrender.com/publications?year=${year}&volume=${volume}`
+          ).then((res) => res.json())
+        );
+
+        const allIssues = await Promise.all(issuePromises);
+
+        console.log("Fetched issue data (counts):", allIssues);
+
+        const aggregatedIssues = {};
+        allIssues.flat().forEach((issue) => {
+          const key = `${issue.volume}-${issue.issue}-${issue.isSpecialIssue}`;
+          if (!aggregatedIssues[key]) {
+            aggregatedIssues[key] = {
+              volume: issue.volume,
+              issue: issue.issue,
+              isSpecialIssue: issue.isSpecialIssue,
+              count: 0,
+            };
+          }
+
+          aggregatedIssues[key].count += 1;
+        });
+
+        const issuesArray = Object.values(aggregatedIssues);
+
+        console.log("Aggregated issues data with counts:", issuesArray);
+
+        setIssuesData(issuesArray);
       } catch (error) {
-        console.error("Error fetching volumes:", error);
+        console.error("Error fetching data:", error);
       }
     };
 
-    if (year) {
-      fetchVolumes();
-    }
+    fetchVolumesAndIssues();
   }, [year]);
 
-  const handleVolumeClick = (volume) => {
-    navigate(`/publications/${year}/${volume}`);
+  const handleClick = (volume, issue, isSpecial) => {
+    console.log("Navigation clicked for: ", { year, volume, issue, isSpecial });
+
+    if (isSpecial) {
+      navigate(`/special-publications/${year}/${volume}/${issue}`);
+    } else {
+      navigate(`/publications/${year}/${volume}/${issue}`);
+    }
   };
 
   return (
-    <div className="page-wrapper">
+    <div className="volumes-page">
       <Header />
-      <div className="content-wrapper">
+      <div className="content">
         <div className="heading-class">
-          <span style={{ color: "blue" }}>Volumes </span>
-          of {year}
+          <span style={{ color: "blue" }}>Volumes & Issues</span> for {year}
         </div>
         <div className="years-container">
-          {volumes.length > 0 ? (
-            volumes.map((volume) => (
+          {issuesData.length > 0 ? (
+            issuesData.map((issue, index) => (
               <div
-                key={volume}
-                className="year-box"
-                onClick={() => handleVolumeClick(volume)}
+                className={`year-box ${
+                  issue.isSpecialIssue ? "special-box" : ""
+                }`}
+                key={`${issue.volume}-${issue.issue}`}
+                onClick={() =>
+                  handleClick(issue.volume, issue.issue, issue.isSpecialIssue)
+                }
               >
                 <div>
-                  Volume {volume}
-                  {volumeData[volume] !== undefined ? (
-                    <span className="publication-count">
-                      ({volumeData[volume]} publications)
-                    </span>
-                  ) : (
-                    <span className="loading-text">(Loading...)</span>
+                  Volume {issue.volume} <br />
+                  Issue {issue.issue}
+                  <div className="count-box">({issue.count} Publications)</div>
+                  {issue.isSpecialIssue && (
+                    <div className="special-tag">Special Issue</div>
                   )}
                 </div>
               </div>
             ))
           ) : (
-            <p>Loading volumes...</p>
+            <p>Loading...</p>
           )}
         </div>
       </div>
