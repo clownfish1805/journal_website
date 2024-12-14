@@ -22,7 +22,7 @@ const Home = () => {
         Academic <span style={{ color: "blue" }}>Excellence</span>
       </div>
 
-      <div>
+      <div className="heading-class">
         <h3
           style={{ textAlign: "center", fontSize: "2rem", marginTop: "40px" }}
         >
@@ -30,6 +30,7 @@ const Home = () => {
           of scholarly work
         </h3>
       </div>
+
       <div class="container">
         <div class="row">
           <div class="box">
@@ -77,10 +78,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div
-        className="about-journal"
-        style={{ fontSize: "1.3rem", lineHeight: "1.6" }}
-      >
+      <div className="about-journal-1">
         By supporting a range of research types, IJEAE aims to bridge
         theoretical frameworks with practical applications, creating a dynamic
         space for knowledge sharing that enriches both academic and professional

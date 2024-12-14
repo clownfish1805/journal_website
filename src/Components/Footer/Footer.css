@@ -9,6 +9,7 @@
     padding: 5px 10px;
     gap: 30px;
     flex-wrap: wrap;
+    /* width: 100%; */
 }
 
 .footer-image {
@@ -47,6 +48,7 @@
         align-items: center;
         padding: 5px;
         gap: 15px;
+        width: 100%;
     }
 
     .footer-image {
@@ -71,10 +73,11 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
     .footer {
         padding: 5px;
         gap: 10px;
+        width: 100%;
     }
 
     .footer-image {
