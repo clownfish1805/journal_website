@@ -22,10 +22,8 @@ const Home = () => {
         Academic <span style={{ color: "blue" }}>Excellence</span>
       </div>
 
-      <div className="heading-class">
-        <h3
-          style={{ textAlign: "center", fontSize: "2rem", marginTop: "40px" }}
-        >
+      <div className="heading-class-1">
+        <h3>
           <span style={{ color: "blue" }}>IJEAE </span>encourages diverse forms
           of scholarly work
         </h3>
