@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"; // To handle navigation
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./YearsPage.css";
+import { Helmet } from "react-helmet";
 
 const YearsPage = () => {
   const [years, setYears] = useState([]);
@@ -32,6 +33,17 @@ const YearsPage = () => {
 
   return (
     <div className="years-page">
+      <Helmet>
+        <title>IJEAE</title>
+        <meta
+          name="description"
+          content="IJEAE is the International Journal of English for Academic Research, offering a platform for high-quality research in English studies."
+        />
+        <meta
+          name="keywords"
+          content="International Journal, English for Academic Research, IJEAE"
+        />
+      </Helmet>
       <Header />
       <div className="content">
         <div className="heading-class">

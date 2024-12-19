@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./PublicationsPage.css";
+import { Helmet } from "react-helmet";
 
 const PublicationsPage = () => {
   const { year, volume, issue } = useParams();
@@ -32,6 +33,17 @@ const PublicationsPage = () => {
 
   return (
     <div className="publications-page">
+      <Helmet>
+        <title>IJEAE</title>
+        <meta
+          name="description"
+          content="IJEAE is the International Journal of English for Academic Research, offering a platform for high-quality research in English studies."
+        />
+        <meta
+          name="keywords"
+          content="International Journal, English for Academic Research, IJEAE"
+        />
+      </Helmet>
       <Header />
       <div className="content">
         <div className="heading-class">
