@@ -8,9 +8,10 @@ const routes = [
   "/journalmetrics",
   "/editorial",
   "/years",
-  "/volumes/:year",
-  "/publications/:year/:volume/:issue",
-  "/special-publications/:year/:volume/:issue",
+  "/volumes/2024",
+  "/volumes/2023",
+  "/publications/2024/1/1",
+  "/special-publications/2024/1/1",
 ];
 
 module.exports = routes;
