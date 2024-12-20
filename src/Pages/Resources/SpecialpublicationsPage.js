@@ -30,7 +30,7 @@ const SpecialpublicationsPage = () => {
   return (
     <div className="special-publications-page">
       <Helmet>
-        <title>IJEAE</title>
+        <title>International Journal of English for Academic Excellence</title>
         <meta
           name="description"
           content="IJEAE is the International Journal of English for Academic Research, offering a platform for high-quality research in English studies."
