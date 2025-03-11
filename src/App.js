@@ -13,6 +13,7 @@ import PublicationsPage from "./Pages/Resources/PublicationsPage";
 import Plagarismpolicy from "./Pages/Authorguide/Plagarismpolicy";
 import Journalmetrics from "./Pages/Authorguide/Journalmetrics";
 import SpecialPublicationsPage from "./Pages/Resources/SpecialpublicationsPage";
+import About from "./Pages/About us/Aboutus";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path="/journalmetrics" element={<Journalmetrics />} />
       <Route path="/editorial" element={<Editorial />} />
       <Route path="/years" element={<YearsPage />} />
+      <Route path="/aboutus" element={<About />} />
       <Route path="/volumes/:year" element={<VolumesPage />} />
       <Route
         path="/publications/:year/:volume/:issue"

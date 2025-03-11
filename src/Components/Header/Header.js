@@ -77,6 +77,7 @@ const Header = () => {
             </Link>
             <Link
               className={`dropdown-wrapper ${
+                location.pathname === "/aboutus" ||
                 location.pathname === "/contactus" ||
                 location.pathname === "/editorial" ||
                 location.pathname === "/announcement"
@@ -93,6 +94,7 @@ const Header = () => {
               )}
               {isAboutDropdownOpen && (
                 <div className="dropdown">
+                  <Link to="/aboutus">About us</Link>
                   <Link to="/announcement">Announcement</Link>
                   <Link to="/editorial">Editorial Board</Link>
                   <Link to="/contactus">Contact us</Link>
