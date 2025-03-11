@@ -25,18 +25,26 @@ const Contactus = () => {
       </div>
       <div className="container-contact">
         <p style={{ fontWeight: "bold" }}>THE PUBLISHER</p>
+
         <p>
           Academic Development Forum (ADF) <br></br>Email:
           <a href="mailto:academicdevelopmentforum24@gmail.com">
             {" "}
             academicdevelopmentforum24@gmail.com
           </a>
+          <br></br>
+          2/2 A, West Street, South Amuthunnakkudi, Sathankulam (post),
+          Thoothukudi (District), Tamil Nadu - 628704
         </p>
+
         <p style={{ fontWeight: "bold" }}>EDITOR-IN-CHIEF</p>
         <p>
           International Journal of English for Academic Excellence<br></br>
           Email:
           <a href="mailto:editor.ijeae@gmail.com"> editor.ijeae@gmail.com</a>
+          <br></br>
+          2/2 A, West Street, South Amuthunnakkudi, Sathankulam (post),
+          Thoothukudi (District), Tamil Nadu - 628704
         </p>
       </div>
       <Footer />

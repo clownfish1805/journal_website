@@ -56,10 +56,13 @@ const Editorial = () => {
               <h3>Associate Editor</h3>
               <p>
                 <span style={{ fontWeight: "bold", fontStyle: "normal" }}>
-                  Dr. M. Richard Robert Raa
+                  Dr. M Richard Robert Raa
                 </span>
-                <br></br>Associate Professor of English,<br></br>Nehru Arts and
-                Science College, Coimbatore, Tamil Nadu - 641 105, India.
+                <br></br>
+                Chairman<br></br>Academic Development Forum<br></br>2/2 A West
+                Street, South Amuthunnakudi, Sathankulam (post),Thoothukudi,
+                Tamil Nadu – 628 704, India.<br></br>
+                <a href="mailto:nascdrrichard@nehrucolleges.com"> Email</a>
               </p>
             </div>
           </div>
